@@ -1,0 +1,83 @@
+.name-split {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  padding: 20px;
+  gap: 10px;
+
+  /* Mobile Default: Stacked */
+  flex-direction: column-reverse;
+}
+
+/* --- Name Container--- */
+.name-text {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.name-wrapper {
+  display: flex;
+  flex-direction: column; /* Stacks Robert on top of Rodriguez */
+
+  /* FLUID FONT SIZE: Adjusts automatically from phone to desktop */
+  font-size: clamp(3.5rem, 6vw + 1rem, 7rem);
+  font-weight: 800;
+  line-height: 1.1;
+  color: #333;
+}
+
+/* --- Stair alignment --- */
+.first-name {
+  text-align: left;
+}
+
+.last-name {
+  margin-left: 3.2em;
+}
+
+/* --- Right side --- */
+.name-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 40px;
+}
+
+.main-name-img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* --- DESKTOP SWITCH --- */
+@media (min-width: 768px) {
+  .name-split {
+    flex-direction: row; /* unstacks and aligns vertically */
+    gap: 50px;
+  }
+
+  .name-text {
+    justify-content: flex-end;
+  }
+}
+
+.icons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.icons img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.code-tag {
+  display: flex;
+  justify-content: center;
+}

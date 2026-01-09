@@ -1,12 +1,18 @@
 import { Routes, Route } from "react-router-dom";
-import Header from "./components/Header";
-import Home from "./pages/Home";
-import Developer from "./pages/Developer";
-import Musician from "./pages/Musician";
+import Header from "./components/Header/Header";
+import Home from "./pages/Home/Home";
+import Developer from "./pages/Developer/Developer";
+import Musician from "./pages/Musician/Musician";
+import background from "./assets/images/background.png";
 
+const bg = {
+  backgroundImage: `url(${background})`,
+  backgroundSize: "cover", // Example: cover the entire container
+  backgroundRepeat: "no-repeat", // Example: prevent image repetition
+};
 export default function App() {
   return (
-    <div>
+    <div style={bg}>
       <Header />
 
       <main>
