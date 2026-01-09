@@ -79,7 +79,7 @@
   color: #555;
   font-weight: 600;
   font-size: 1rem;
-  transition: color 0.2s;
+  transition: 0.2s;
 }
 
 .nav-links a:hover {
