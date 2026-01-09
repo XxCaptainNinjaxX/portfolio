@@ -3,7 +3,8 @@ import Header from "./components/Header/Header";
 import Home from "./pages/Home/Home";
 import Developer from "./pages/Developer/Developer";
 import Musician from "./pages/Musician/Musician";
-import background from "./assets/images/background.png";
+import background from "./assets/images/two.jpg";
+// potiental backgrounds: one,four,five
 
 const bg = {
   backgroundImage: `url(${background})`,
