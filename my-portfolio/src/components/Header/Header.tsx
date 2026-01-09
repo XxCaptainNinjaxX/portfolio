@@ -5,10 +5,8 @@ import "./Header.css";
 export default function Header() {
   return (
     <header className="portfolio-header">
-      {/* ROW 1: Logo/Name + Email */}
       <div className="header-top">
         <div className="brand">
-          {/* Using your existing logo image here */}
           <img
             src="/android-chrome-192x192.png"
             alt="Logo"
@@ -29,10 +27,9 @@ export default function Header() {
         </div>
       </div>
 
-      {/* The Divider Line */}
       <hr className="header-divider" />
 
-      {/* Other pages*/}
+      {/* Pages*/}
       <div className="header-bottom">
         <nav className="nav-links">
           <Link to="/">About Me</Link>
@@ -40,7 +37,7 @@ export default function Header() {
           <Link to="/musician">Musician</Link>
         </nav>
 
-        {/* Social Icons */}
+        {/* Socials */}
         <div className="social-icons">
           <a
             href="https://www.instagram.com/wh0s.r0bert/"

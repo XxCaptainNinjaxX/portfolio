@@ -42,22 +42,15 @@ const AntigravityInner: React.FC<AntigravityProps> = ({
   const dummy = useMemo(() => new THREE.Object3D(), []);
 
   // --- MANUAL MOUSE TRACKER SETUP ---
-  // We initialize it to 0,0
   const mouseRef = useRef({ x: 0, y: 0 });
 
   useEffect(() => {
     const handleMove = (e: MouseEvent) => {
-      // 1. Get the raw screen position
-      // 2. Convert it to the -1 to +1 range that Three.js expects
       mouseRef.current.x = (e.clientX / window.innerWidth) * 2 - 1;
-      // We invert Y because Screen Y is "Down" but 3D Y is "Up"
       mouseRef.current.y = -(e.clientY / window.innerHeight) * 2 + 1;
     };
 
-    // Attach listener to the whole window
     window.addEventListener("mousemove", handleMove);
-
-    // Cleanup when component unmounts
     return () => window.removeEventListener("mousemove", handleMove);
   }, []);
   // ----------------------------------
@@ -112,8 +105,6 @@ const AntigravityInner: React.FC<AntigravityProps> = ({
     if (!mesh) return;
 
     const { viewport: v } = state;
-
-    // USE OUR MANUAL MOUSE REF INSTEAD OF state.pointer
     const m = mouseRef.current;
 
     const mouseDist = Math.sqrt(
@@ -221,7 +212,6 @@ const AntigravityInner: React.FC<AntigravityProps> = ({
 
 const Antigravity: React.FC<AntigravityProps> = (props) => {
   return (
-    // We remove eventSource here because we are handling it manually above!
     <Canvas camera={{ position: [0, 0, 50], fov: 35 }}>
       <AntigravityInner {...props} />
     </Canvas>

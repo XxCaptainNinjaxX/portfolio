@@ -8,9 +8,8 @@ import git from "../../assets/icons/png/github.png";
 export default function Home() {
   return (
     <>
-      {/* === THE HERO SECTION (Top area) === */}
       <section className="name-split">
-        {/* LEFT SIDE: The Name */}
+        {/* LEFT SIDE: Name */}
         <div className="name-text">
           <div className="name-wrapper">
             <span className="first-name">Robert</span>
@@ -18,7 +17,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* RIGHT SIDE: The Image */}
+        {/* RIGHT SIDE: Image */}
         <div className="name-image-container">
           <img
             src="/android-chrome-192x192.png"
@@ -27,7 +26,7 @@ export default function Home() {
           />
         </div>
       </section>
-      {/* The Fake Tag */}
+      {/* Fake Tags */}
       <h2 className="code-tag">&lt;skills&gt;</h2>
       <div className="icons">
         <img
