@@ -3,14 +3,14 @@ import Header from "./components/Header/Header";
 import Home from "./pages/Home/Home";
 import Developer from "./pages/Developer/Developer";
 import Musician from "./pages/Musician/Musician";
-import BgAnimation from "./components/background/bgAnimation";
+import SplashCursor from "./components/background/splashCursor";
 
 export default function App() {
   return (
     <div
       style={{ position: "relative", minHeight: "100vh", overflow: "hidden" }}
     >
-      {/* ANIMATED BACKGROUND */}
+      {/* Background (Keep as is, make sure zIndex is -1 in the file) */}
       <div
         style={{
           position: "absolute",
@@ -21,21 +21,14 @@ export default function App() {
           zIndex: -1,
         }}
       >
-        <BgAnimation
-          magnetRadius={11}
-          ringRadius={9}
-          waveSpeed={1.5}
-          waveAmplitude={1.7}
-          count={1500}
-          color="#5729ff"
-          autoAnimate={false}
-          particleVariance={0.4}
-        />
+        <SplashCursor />
       </div>
 
-      {/* Main Content */}
       <Header />
-      <main>
+
+      {/* UPDATE THIS SECTION */}
+      {/* We add position: relative and zIndex: 1 to force it to the front */}
+      <main style={{ position: "relative", zIndex: 1 }}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/developer" element={<Developer />} />

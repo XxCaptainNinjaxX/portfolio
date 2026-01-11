@@ -1,8 +1,10 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-base: "/projects/portfolio/";
+import tailwindcss from "@tailwindcss/vite";
+
+export default defineConfig({
+  base: "/projects/portfolio/",
+  plugins: [react(), tailwindcss()],
+});
 
 // https://vite.dev/config/
-export default defineConfig({
-  plugins: [react()],
-});
