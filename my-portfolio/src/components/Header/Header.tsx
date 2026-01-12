@@ -2,7 +2,12 @@ import { Link } from "react-router-dom";
 import { FaInstagram, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import "./Header.css";
 
-export default function Header() {
+interface HeaderProps {
+  isSplashOn: boolean;
+  toggleSplash: () => void;
+}
+
+export default function Header({ isSplashOn, toggleSplash }: HeaderProps) {
   return (
     <header className="portfolio-header">
       <div className="header-top">
@@ -67,6 +72,20 @@ export default function Header() {
           >
             <FaLinkedinIn />
           </a>
+
+          {/* cursor switch */}
+          <div className="container">
+            <input
+              type="checkbox"
+              name="checkbox"
+              id="checkbox"
+              checked={isSplashOn}
+              onChange={toggleSplash}
+            />
+            <label htmlFor="checkbox" className="label">
+              {}
+            </label>
+          </div>
         </div>
       </div>
     </header>
