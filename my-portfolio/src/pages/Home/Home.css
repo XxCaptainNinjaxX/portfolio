@@ -21,20 +21,21 @@
   display: flex;
   flex-direction: column; /* Stacks Robert on top of Rodriguez */
 
-  /* FLUID FONT SIZE: Adjusts automatically from phone to desktop */
   font-size: clamp(3.5rem, 6vw + 1rem, 7rem);
-  font-weight: 800;
+  font-weight: 500;
   line-height: 1.1;
   color: #000000;
+  font-family: Poppins;
 }
 
 /* --- Stair alignment --- */
 .first-name {
   text-align: left;
+  margin-left: 0.67em;
 }
 
 .last-name {
-  margin-left: 3.2em;
+  margin-left: 3em;
 }
 
 /* --- Right side --- */
@@ -42,7 +43,7 @@
   flex: 1;
   display: flex;
   justify-content: flex-start;
-  padding-left: 40px;
+  padding-left: 5em;
 }
 
 .main-name-img {
