@@ -15,35 +15,18 @@ export default function App() {
   };
 
   return (
-    <div
-      style={{ position: "relative", minHeight: "100vh", overflow: "hidden" }}
-    >
+    <div className="app-container">
       <div
-        style={{
-          position: "fixed",
-          top: 0,
-          left: 0,
-          width: "100%",
-          height: "100%",
-          backgroundImage: `url(${background})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          zIndex: -2,
-        }}
+        className="background-layer"
+        style={{ backgroundImage: `url(${background})` }}
       />
 
-      <div
-        style={{
-          opacity: cursorOn ? 1 : 0,
-          pointerEvents: "none",
-        }}
-      >
-        <SplashCursor />
-      </div>
+      {cursorOn && <SplashCursor />}
 
       <Header isSplashOn={cursorOn} toggleSplash={toggleCursor} />
 
-      <main style={{ position: "relative", zIndex: 1 }}>
+      {/* main content */}
+      <main className="content-layer">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/developer" element={<Developer />} />
