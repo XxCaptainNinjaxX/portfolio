@@ -100,3 +100,32 @@
 .custom-shape-divider-top-1768919941 .shape-fill {
   fill: #ffffff;
 }
+
+/* about me sections  */
+.about-me {
+  font-size: 3.5rem;
+  font-weight: 500;
+  font-family: Poppins;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.edu-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  padding: 200px 10%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Style the wrapper for the cards */
+.course-grid {
+  display: flex;
+  flex-wrap: wrap;
+}

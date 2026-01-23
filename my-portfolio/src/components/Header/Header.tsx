@@ -38,6 +38,7 @@ export default function Header({ isSplashOn, toggleSplash }: HeaderProps) {
       <div className="header-bottom">
         <nav className="nav-links">
           <Link to="/">About Me</Link>
+          <Link to="/student">Student</Link>
           <Link to="/developer">Developer</Link>
           <Link to="/musician">Musician</Link>
         </nav>

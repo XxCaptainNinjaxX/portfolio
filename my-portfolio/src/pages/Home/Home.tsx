@@ -5,6 +5,8 @@ import java from "../../assets/icons/png/java.png";
 import figma from "../../assets/icons/png/figma.png";
 import git from "../../assets/icons/png/github.png";
 
+import Course from "../../components/Card/Card.tsx";
+
 export default function Home() {
   return (
     <>
@@ -76,22 +78,38 @@ export default function Home() {
         </svg>
       </div>
       {/* three sections after skills */}
-      {/* student-section */}
-      <section className="section-1">
-        <span className="edu-section">Student</span>
-        {/* add course 1 */}
-        {/* add course 2 */}
-      </section>
-      <section className="section-2">
-        <span className="dev-section">Developer</span>
-        {/* add project 1 */}
-        {/* add project 2 */}
-      </section>
-      <section className="section-2">
-        <span className="music-section">Musicsian</span>
-        {/* add Rutgerz band */}
-        {/* add NJIT band */}
-        {/* add soloist */}
+      <section className="about-me">
+        {/* student-section */}
+        <div className="edu-section">
+          <span className="student">Student</span>
+          <div className="course-grid">
+            <Course
+              desc="something something something"
+              alt="picture"
+              image="/android-chrome-192x192.png"
+            />
+            <Course
+              desc="something something something something something 
+              something
+              something soemthing something something seomthing seomthing soemthing something "
+              alt="picture"
+              image="/android-chrome-192x192.png"
+            />
+
+            {/* add course 2 */}
+          </div>
+        </div>
+        <div className="dev-section">
+          <span className="developer">Developer</span>
+          {/* add project 1 */}
+          {/* add project 2 */}
+        </div>
+        <div className="music-section">
+          <span className="musician">Musicsian</span>
+          {/* add Rutgerz band */}
+          {/* add NJIT band */}
+          {/* add soloist */}
+        </div>
       </section>
       <br></br>
       <br></br>

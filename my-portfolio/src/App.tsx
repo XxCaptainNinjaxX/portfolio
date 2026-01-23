@@ -6,6 +6,7 @@ import Developer from "./pages/Developer/Developer";
 import Musician from "./pages/Musician/Musician";
 import SplashCursor from "./components/background/splashCursor";
 import background from "./assets/images/four.jpg";
+import Student from "./pages/Student/Student";
 
 export default function App() {
   const [cursorOn, setCursor] = useState(true);
@@ -29,6 +30,7 @@ export default function App() {
       <main className="content-layer">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/student" element={<Student />} />
           <Route path="/developer" element={<Developer />} />
           <Route path="/musician" element={<Musician />} />
         </Routes>
