@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { FaInstagram, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import "./Header.css";
 
 interface HeaderProps {
@@ -44,15 +44,6 @@ export default function Header({ isSplashOn, toggleSplash }: HeaderProps) {
 
         {/* Socials */}
         <div className="social-icons">
-          <a
-            href="https://www.instagram.com/wh0s.r0bert/"
-            className="icon-box"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="Instagram"
-          >
-            <FaInstagram />
-          </a>
           <a
             href="#"
             className="icon-box"
