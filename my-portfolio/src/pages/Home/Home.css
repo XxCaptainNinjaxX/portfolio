@@ -83,24 +83,6 @@
   justify-content: center;
 }
 
-.custom-shape-divider-top-1768919941 {
-  position: absolute;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-.custom-shape-divider-top-1768919941 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 158px;
-}
-
-.custom-shape-divider-top-1768919941 .shape-fill {
-  fill: #ffffff;
-}
-
 /* about me sections  */
 .about-me {
   font-size: 3.5rem;

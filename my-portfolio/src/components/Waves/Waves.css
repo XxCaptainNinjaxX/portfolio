@@ -1,0 +1,64 @@
+/* waves */
+
+.wave1 {
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave1 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 140px;
+}
+
+.wave1 .shape-fill {
+  fill: #ffffff;
+}
+/* -------------------------------------------------- */
+.wave2 {
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.wave2 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 140px;
+}
+
+.wave2 .shape-fill {
+  fill: #ffffff;
+}
+
+/* 
+
+.wave2 {
+  width: 100%;
+  overflow: hidden;
+  transform: rotate(180deg);
+}
+
+.wave2 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+}
+
+.wave2 .shape-fill {
+  fill: #ffffff;
+} */
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .wave2 svg {
+    width: calc(190% + 1.3px);
+    height: 76px;
+  }
+}
