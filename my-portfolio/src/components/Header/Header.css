@@ -1,6 +1,9 @@
 .portfolio-header {
   padding: 0 3rem;
   font-family: Helvetica;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 /* --- TOP ROW --- */

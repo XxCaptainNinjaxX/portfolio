@@ -5,7 +5,7 @@ import java from "../../assets/icons/png/java.png";
 import figma from "../../assets/icons/png/figma.png";
 import git from "../../assets/icons/png/github.png";
 
-import Course from "../../components/Card/Card.tsx";
+import Card from "../../components/Card/Card.tsx";
 import DownWaves from "../../components/Waves/DownWaves.tsx";
 import UpWaves from "../../components/Waves/UpWaves.tsx";
 
@@ -56,43 +56,75 @@ export default function Home() {
       <h2 className="code-tag">&lt;/skills&gt;</h2> {/* skill tags */}
       {/* Squig lines */}
       <UpWaves />
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <DownWaves />
       {/* three sections after skills */}
       <section className="about-me">
         {/* student-section */}
         <div className="edu-section">
-          <span className="student">Student</span>
+          <span className="student">Student </span>
           <div className="course-grid">
-            <Course
+            <Card
               desc="something something something"
               alt="picture"
               image="/android-chrome-192x192.png"
             />
-            <Course
+            <Card
               desc="something something something something something 
               something
               something soemthing something something seomthing seomthing soemthing something "
               alt="picture"
               image="/android-chrome-192x192.png"
             />
-
-            {/* add course 2 */}
           </div>
         </div>
+        <UpWaves />
+        <br />
+        <br />
 
+        <DownWaves />
         <div className="dev-section">
           <span className="developer">Developer</span>
-          {/* add project 1 */}
-          {/* add project 2 */}
+          <div className="project-grid">
+            {/* add project 1 */}
+            <Card
+              desc="Learneant app"
+              alt="App created"
+              image="/android-chrome-192x192.png"
+            />
+            <Card
+              desc="Prez & Perm website created for a friend"
+              alt="App created"
+              image="/android-chrome-192x192.png"
+            />
+            {/* add project 2 */}
+          </div>
         </div>
+        <UpWaves />
+        <br />
+        <br />
+
+        <DownWaves />
         <div className="music-section">
-          <span className="musician">Musicsian</span>
+          <span className="musician">Musician</span>
+          <div className="music-grid">
+            {/* add project 1 */}
+            <Card
+              desc="Learneant app"
+              alt="App created"
+              image="/android-chrome-192x192.png"
+            />
+            <Card
+              desc="Prez & Perm website created for a friend"
+              alt="App created"
+              image="/android-chrome-192x192.png"
+            />
+            {/* add project 2 */}
+          </div>
           {/* add Rutgerz band */}
           {/* add NJIT band */}
           {/* add soloist */}

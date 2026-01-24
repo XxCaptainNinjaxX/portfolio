@@ -90,24 +90,61 @@
   font-family: Poppins;
 }
 
-.course-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+.course-grid,
+.project-grid,
+.music-grid {
   gap: 1.5rem;
-}
-
-.edu-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-
-  padding: 200px 10%;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-/* Style the wrapper for the cards */
-.course-grid {
   display: flex;
   flex-wrap: wrap;
+}
+
+.course-grid,
+.music-grid {
+  padding-right: 1.2em;
+}
+
+.project-grid {
+  padding-left: 1.2em;
+}
+
+.edu-section,
+.music-section {
+  align-items: flex-start;
+}
+
+.dev-section {
+  flex-direction: row-reverse;
+}
+
+.edu-section,
+.dev-section,
+.music-section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 200px;
+}
+
+/* names */
+
+.student,
+.developer,
+.musician {
+  font-size: clamp(3.5rem, 6vw + 1rem, 7rem);
+  font-weight: 500;
+  line-height: 1.1;
+  color: #000000;
+  font-family: Poppins;
+}
+
+.student,
+.musician {
+  margin-left: 1.2em;
+  padding-top: 100px;
+}
+
+.developer {
+  margin-right: 1.2em;
+  padding-top: 100px;
 }
