@@ -1,5 +1,6 @@
 import "./Home.css";
-import { motion } from "framer-motion"; // <--- 1. Import the library
+import { motion } from "framer-motion";
+import { useState } from "react";
 
 import css from "../../assets/icons/png/css.png";
 import js from "../../assets/icons/png/js.png";
@@ -10,6 +11,7 @@ import git from "../../assets/icons/png/github.png";
 import Card from "../../components/Card/Card.tsx";
 import DownWaves from "../../components/Waves/DownWaves.tsx";
 import UpWaves from "../../components/Waves/UpWaves.tsx";
+import PopUp from "../../components/Pop-up/Pop-up.tsx";
 
 export default function Home() {
   const fadeInUp = {
@@ -19,8 +21,22 @@ export default function Home() {
     transition: { duration: 1.5 },
   };
 
+  interface PopupData {
+    title: string;
+    desc: string;
+  }
+
+  const [activeData, setActiveData] = useState<PopupData | null>(null);
   return (
     <>
+      {activeData && (
+        <PopUp
+          title={activeData.title} // Pass the title
+          content={activeData.desc} // Pass the description
+          onClose={() => setActiveData(null)}
+        />
+      )}
+
       <section className="name-split">
         {/* LEFT SIDE: Name */}
         <div className="name-text">
@@ -85,9 +101,15 @@ export default function Home() {
               desc="Intro to Comp Sci (Java)"
               alt="Java Code"
               image="/android-chrome-192x192.png"
+              onClick={() =>
+                setActiveData({
+                  title: "Intro to Computer Science (Java)",
+                  desc: "Building on my prior coding experience, I am currently adding to my knowledge of the Java language.",
+                })
+              }
             />
             <Card
-              desc="Financial Accounting"
+              desc="Accounting 1"
               alt="Accounting"
               image="/android-chrome-192x192.png"
             />

@@ -11,12 +11,13 @@ interface cardProp {
   img/file = "string" (cause we type path)
 
   */
+  onClick?: () => void;
 }
 
 export default function (props: cardProp) {
   return (
     <>
-      <div className="course">
+      <div className="course" onClick={props.onClick}>
         <img src={props.image} alt={props.alt} className="course-image" />
 
         <p className="course-desc">{props.desc}</p>
