@@ -6,8 +6,7 @@
   padding: 20px;
   gap: 10px;
 
-  /* Mobile Default: Stacked */
-  flex-direction: column-reverse;
+  flex-direction: row;
 }
 
 /* --- Name Container--- */
@@ -19,7 +18,7 @@
 
 .name-wrapper {
   display: flex;
-  flex-direction: column; /* Stacks Robert on top of Rodriguez */
+  flex-direction: column;
 
   font-size: clamp(3.5rem, 6vw + 1rem, 7rem);
   font-weight: 500;
@@ -51,18 +50,6 @@
   max-width: 400px;
   height: auto;
   object-fit: contain;
-}
-
-/* --- DESKTOP SWITCH --- */
-@media (min-width: 768px) {
-  .name-split {
-    flex-direction: row; /* unstacks and aligns vertically */
-    gap: 50px;
-  }
-
-  .name-text {
-    justify-content: flex-end;
-  }
 }
 
 .icons {
@@ -147,4 +134,39 @@
 .developer {
   margin-right: 1.2em;
   padding-top: 100px;
+}
+
+/* mobile view */
+
+@media (max-width: 768px) {
+  .edu-section,
+  .dev-section,
+  .music-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    padding-top: 50px;
+  }
+
+  .student,
+  .developer,
+  .musician {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .course-grid,
+  .project-grid,
+  .music-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+
+    padding: 0;
+    gap: 20px;
+  }
 }

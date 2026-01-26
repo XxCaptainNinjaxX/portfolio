@@ -31,8 +31,8 @@ export default function Home() {
     <>
       {activeData && (
         <PopUp
-          title={activeData.title} // Pass the title
-          content={activeData.desc} // Pass the description
+          title={activeData.title}
+          content={activeData.desc}
           onClose={() => setActiveData(null)}
         />
       )}
