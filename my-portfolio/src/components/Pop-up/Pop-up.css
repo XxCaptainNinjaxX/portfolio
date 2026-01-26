@@ -27,12 +27,12 @@
   padding: 0;
   overflow: hidden;
   text-align: left;
-  font-family: "Poppins", sans-serif;
   text-align: center;
 }
 
 .popup-header {
   padding: 30px 40px 10px 40px;
+  font-family: Elms Sans;
 }
 
 .popup-header h2 {
@@ -44,6 +44,7 @@
 
 .popup-body {
   padding: 10px 40px 30px 40px;
+  font-family: Elms Sans;
 }
 
 .popup-body p {

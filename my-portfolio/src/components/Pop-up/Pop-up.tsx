@@ -1,5 +1,6 @@
 import "./Pop-up.css";
-import { motion } from "framer-motion"; // Let's add smooth entry animation!
+import { motion } from "framer-motion";
+import { useEffect } from "react";
 
 interface ModalProps {
   content: string;
@@ -8,6 +9,15 @@ interface ModalProps {
 }
 
 export default function Modal(props: ModalProps) {
+  useEffect(() => {
+    const escKey = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        props.onClose();
+      }
+    };
+    window.addEventListener("keydown", escKey);
+  });
+
   return (
     <div className="blur-overlay" onClick={props.onClose}>
       <motion.div

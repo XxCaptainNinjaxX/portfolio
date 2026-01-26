@@ -82,14 +82,6 @@ export default function Home() {
       <h2 className="code-tag">&lt;/skills&gt;</h2>
 
       <UpWaves />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-
       <DownWaves />
 
       <section className="about-me">
@@ -104,7 +96,7 @@ export default function Home() {
               onClick={() =>
                 setActiveData({
                   title: "Intro to Computer Science (Java)",
-                  desc: "Building on my prior coding experience, I am currently adding to my knowledge of the Java language.",
+                  desc: "Building from my prior knowledge of Java, I am currently adding to it by taking a Java class. Touching back on the basics and diving deeper into the more intermediate side",
                 })
               }
             />
@@ -112,18 +104,28 @@ export default function Home() {
               desc="Accounting 1"
               alt="Accounting"
               image="/android-chrome-192x192.png"
+              onClick={() =>
+                setActiveData({
+                  title: "Accounting 1",
+                  desc: "As I plan to go into the finance and buisness world, I am taking an Accounting class to begin that journey.",
+                })
+              }
             />
             <Card
               desc="Calculus 1"
               alt="Calculus"
               image="/android-chrome-192x192.png"
+              onClick={() =>
+                setActiveData({
+                  title: "Calculus 1",
+                  desc: "",
+                })
+              }
             />
           </div>
         </motion.div>
 
         <UpWaves />
-        <br />
-        <br />
         <DownWaves />
 
         {/* DEVELOPER SECTION  */}
@@ -134,18 +136,28 @@ export default function Home() {
               desc="Learneant App"
               alt="Productivity App"
               image="/android-chrome-192x192.png"
+              onClick={() =>
+                setActiveData({
+                  title: "Learneant",
+                  desc: "A work in progress application. The 1 in all tool for students, a hub that entails GPA/Grade calculator, Calender, Notes app and alot more. All a student would need in their academic career.",
+                })
+              }
             />
             <Card
               desc="Prez & Perm"
               alt="Friend's Website"
               image="/android-chrome-192x192.png"
+              onClick={() =>
+                setActiveData({
+                  title: "Prez & Perm",
+                  desc: "A website that was devloped for a friend. Uses React and intemplation of API's to recive videos",
+                })
+              }
             />
           </div>
         </motion.div>
 
         <UpWaves />
-        <br />
-        <br />
         <DownWaves />
 
         {/* MUSICIAN SECTION  */}
