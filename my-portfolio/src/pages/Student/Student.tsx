@@ -1,3 +1,10 @@
+import PageHeader from "../../components/PageHeader/PageHeader";
+
 export default function Student() {
-  return <h1> Student Page</h1>;
+  return (
+    <>
+      <h1> Student Page</h1>
+      <PageHeader />
+    </>
+  );
 }

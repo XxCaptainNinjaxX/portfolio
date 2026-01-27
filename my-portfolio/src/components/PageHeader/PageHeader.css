@@ -1,0 +1,89 @@
+/* ---            MAIN CONTENT               --- */
+
+.main-content {
+  flex-grow: 1;
+  padding: 1rem 2rem;
+  max-width: 1400px;
+  /* main css that makes content centered */
+  margin: 0 auto;
+  overflow-y: auto;
+  height: 100%;
+}
+
+.main-content h1 {
+  font-size: 2rem;
+  margin-top: 0;
+  text-align: center;
+  padding-top: 1rem;
+  color: #dfd0b8;
+}
+
+.main-content h1 span {
+  font-size: 0.9rem;
+  color: #777;
+  font-weight: normal;
+}
+
+.main-content h2 {
+  font-size: 1.5rem;
+  border-bottom: 2px solid rgb(222, 137, 0); /* adds the "underline" under NBA */
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  color: rgb(222, 137, 0);
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+.video-card {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  color: #333;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+.video-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.video-thumbnail {
+  height: 140px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  overflow: hidden;
+  background-color: #e0e0e0; /* Gray fallback color while image loads */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.video-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This makes the image fill the box without stretching */
+}
+.video-info {
+  padding: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+}
+.video-tag {
+  background-color: #333;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+.video-views {
+  color: #666;
+  font-weight: bold;
+}

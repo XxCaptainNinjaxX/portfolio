@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
+import { PopupProvider } from "./components/Pop-up/Pop-upContext";
+
 import Header from "./components/Header/Header";
 import Home from "./pages/Home/Home";
 import Developer from "./pages/Developer/Developer";
@@ -16,25 +18,27 @@ export default function App() {
   };
 
   return (
-    <div className="app-container">
-      <div
-        className="background-layer"
-        style={{ backgroundImage: `url(${background})` }}
-      />
+    <PopupProvider>
+      <div className="app-container">
+        <div
+          className="background-layer"
+          style={{ backgroundImage: `url(${background})` }}
+        />
 
-      {cursorOn && <SplashCursor />}
+        {cursorOn && <SplashCursor />}
 
-      <Header isSplashOn={cursorOn} toggleSplash={toggleCursor} />
+        <Header isSplashOn={cursorOn} toggleSplash={toggleCursor} />
 
-      {/* main content */}
-      <main className="content-layer">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/student" element={<Student />} />
-          <Route path="/developer" element={<Developer />} />
-          <Route path="/musician" element={<Musician />} />
-        </Routes>
-      </main>
-    </div>
+        {/* main content */}
+        <main className="content-layer">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/student" element={<Student />} />
+            <Route path="/developer" element={<Developer />} />
+            <Route path="/musician" element={<Musician />} />
+          </Routes>
+        </main>
+      </div>
+    </PopupProvider>
   );
 }
