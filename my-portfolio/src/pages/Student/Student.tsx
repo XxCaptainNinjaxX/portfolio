@@ -5,6 +5,7 @@ export default function Student() {
     <>
       <h1> Student Page</h1>
       <PageHeader />
+      {/* something something */}
     </>
   );
 }
