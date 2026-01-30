@@ -1,23 +1,15 @@
 import "./PageHeader.css";
 import Card from "../Card/Card.tsx";
 
-export default function PageHeader() {
+interface HeaderProp {
+  title: string;
+}
+export default function PageHeader(props: HeaderProp) {
   return (
     <div>
       <main className="main-content">
-        <div className="video-grid">
-          {/* <Card
-            desc="Calculus 1"
-            alt="Calculus"
-            image="/android-chrome-192x192.png"
-            onClick={() =>
-              setActiveData({
-                title: "Calculus 1",
-                desc: "",
-              })
-            }
-          /> */}
-
+        <h2> {props.title}</h2>
+        {/* <div className="video-grid">
           <a
             href="https://www.youtube.com/watch?v=4Nhz4QswAV0"
             target="_blank"
@@ -66,21 +58,7 @@ export default function PageHeader() {
               <span className="video-views">.... </span>
             </div>{" "}
           </a>
-          <a href="#" className="video-card">
-            <div className="video-thumbnail">Coming soon!</div>
-            <div className="video-info">
-              <span className="video-tag">-----</span>
-              <span className="video-views">.... </span>
-            </div>{" "}
-          </a>
-          <a href="#" className="video-card">
-            <div className="video-thumbnail">Coming soon!</div>
-            <div className="video-info">
-              <span className="video-tag">-----</span>
-              <span className="video-views">.... </span>
-            </div>
-          </a>
-        </div>
+        </div> */}
       </main>
     </div>
   );

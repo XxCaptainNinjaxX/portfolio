@@ -1,0 +1,24 @@
+.student-page {
+  padding-bottom: 100px;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 0;
+  margin-bottom: 20px;
+  font-size: 3rem;
+}
+
+.currentGrid,
+.nextGrid,
+.pastGrid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 20px;
+  width: 100%;
+  max-width: 3000px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}

@@ -68,6 +68,7 @@
 .code-tag {
   display: flex;
   justify-content: center;
+  border-bottom: transparent;
 }
 
 /* about me sections  */
