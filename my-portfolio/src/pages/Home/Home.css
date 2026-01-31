@@ -5,11 +5,9 @@
   min-height: 60vh;
   padding: 20px;
   gap: 10px;
-
   flex-direction: row;
 }
 
-/* --- Name Container--- */
 .name-text {
   flex: 1;
   display: flex;
@@ -19,7 +17,6 @@
 .name-wrapper {
   display: flex;
   flex-direction: column;
-
   font-size: clamp(3.5rem, 6vw + 1rem, 7rem);
   font-weight: 500;
   line-height: 1.1;
@@ -27,7 +24,6 @@
   font-family: Elms Sans;
 }
 
-/* --- Stair alignment --- */
 .first-name {
   text-align: left;
   margin-left: 0.67em;
@@ -37,7 +33,6 @@
   margin-left: 3em;
 }
 
-/* --- Right side --- */
 .name-image-container {
   flex: 1;
   display: flex;
@@ -52,69 +47,65 @@
   object-fit: contain;
 }
 
+.code-tag {
+  display: flex;
+  justify-content: center;
+  border-bottom: transparent;
+  font-family: monospace;
+  color: #555;
+  margin: 20px 0;
+}
+
 .icons {
   display: flex;
-  gap: 20px;
+  gap: 30px;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 0 20px;
 }
 
 .icons img {
   width: 80px;
   height: 80px;
   object-fit: contain;
+  transition: transform 0.2s ease;
 }
 
-.code-tag {
-  display: flex;
-  justify-content: center;
-  border-bottom: transparent;
+.icons img:hover {
+  transform: translateY(-5px);
 }
 
-/* about me sections  */
 .about-me {
-  font-size: 3.5rem;
-  font-weight: 500;
-  font-family: Elms Sans;
-}
-
-.course-grid,
-.project-grid,
-.music-grid {
-  gap: 1.5rem;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.course-grid,
-.music-grid {
-  padding-right: 1.2em;
-}
-
-.project-grid {
-  padding-left: 1.2em;
-}
-
-.edu-section,
-.music-section {
-  align-items: flex-start;
-}
-
-.dev-section {
-  flex-direction: row-reverse;
+  width: 100%;
 }
 
 .edu-section,
 .dev-section,
 .music-section {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
   width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  padding-left: 40px;
+  gap: 2rem;
   box-sizing: border-box;
-  padding-top: 200px;
 }
 
-/* names */
+.edu-section,
+.music-section {
+  flex-direction: row;
+  text-align: left;
+}
+
+.dev-section {
+  flex-direction: row-reverse;
+  text-align: right;
+  padding-right: 40px;
+}
 
 .student,
 .developer,
@@ -122,52 +113,97 @@
   font-size: clamp(3.5rem, 6vw + 1rem, 7rem);
   font-weight: 500;
   line-height: 1.1;
-  color: #000000;
+  color: #000;
   font-family: Elms Sans;
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  min-width: 300px;
+}
+
+.course-grid,
+.project-grid,
+.music-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  flex: 1.5;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .student,
 .musician {
   margin-left: 1.2em;
-  padding-top: 100px;
 }
 
 .developer {
   margin-right: 1.2em;
-  padding-top: 100px;
 }
 
-/* mobile view */
+@media (max-width: 1100px) {
+  .name-split {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    min-height: auto;
+  }
 
-@media (max-width: 768px) {
+  .name-text {
+    width: 100%;
+  }
+
+  .name-wrapper {
+    align-items: center;
+    font-size: clamp(3rem, 10vw, 4.5rem);
+  }
+
+  .first-name,
+  .last-name {
+    margin-left: 0 !important;
+    text-align: center;
+  }
+
+  .name-image-container {
+    padding-left: 0;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
   .edu-section,
   .dev-section,
   .music-section {
     flex-direction: column;
-    align-items: center;
     text-align: center;
     gap: 30px;
-    padding-top: 50px;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .dev-section {
+    flex-direction: column;
   }
 
   .student,
   .developer,
   .musician {
     width: 100%;
-    margin: 0;
-    padding: 0;
     text-align: center;
+    margin: 0 !important;
+    margin-bottom: 20px !important;
   }
 
   .course-grid,
   .project-grid,
   .music-grid {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
     width: 100%;
-
+    justify-content: center;
     padding: 0;
-    gap: 20px;
   }
 }
