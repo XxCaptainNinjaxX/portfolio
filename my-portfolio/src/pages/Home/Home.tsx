@@ -84,8 +84,8 @@ export default function Home() {
               desc="Calculus 1"
               alt="Calculus"
               image="/android-chrome-192x192.png"
-              popupTitle="Calculus 1"
-              popupDesc=""
+              popupTitle="temp"
+              popupDesc="temp"
             />
           </div>
         </Reveal>
@@ -125,15 +125,15 @@ export default function Home() {
               desc="NJIT Jazz Band"
               alt="Jazz Band"
               image="/android-chrome-192x192.png"
-              popupTitle=""
-              popupDesc=""
+              popupTitle="temp"
+              popupDesc="temp"
             />
             <Card
               desc="Soloist Performance"
               alt="Solo"
               image="/android-chrome-192x192.png"
-              popupTitle=""
-              popupDesc=""
+              popupTitle="temp"
+              popupDesc="temp"
             />
           </div>
         </Reveal>

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import "./Header.css";
 
@@ -37,10 +37,10 @@ export default function Header({ isSplashOn, toggleSplash }: HeaderProps) {
       {/* Pages*/}
       <div className="header-bottom">
         <nav className="nav-links">
-          <Link to="/">About Me</Link>
-          <Link to="/student">Student</Link>
-          <Link to="/developer">Developer</Link>
-          <Link to="/musician">Musician</Link>
+          <NavLink to="/">About Me</NavLink>
+          <NavLink to="/student">Student</NavLink>
+          <NavLink to="/developer">Developer</NavLink>
+          <NavLink to="/musician">Musician</NavLink>
         </nav>
 
         {/* Socials */}

@@ -88,6 +88,11 @@
   color: #000;
 }
 
+.nav-links a.active {
+  color: #000000;
+  font-weight: 800;
+}
+
 /* --- SOCIAL ICONS --- */
 .social-icons {
   display: flex;

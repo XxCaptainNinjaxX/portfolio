@@ -1,7 +1,99 @@
+import "./Developer.css";
+
+import PageHeader from "../../components/PageHeader/PageHeader";
+import Card from "../../components/Card/Card";
+
+const currentProjects = [
+  {
+    title: "Learneant App",
+    desc: "A work in progress application. The 1 in all tool for students, a hub that entails GPA/Grade calculator, Calender, Notes app and alot more. All a student would need in their academic career.",
+    image: "/android-chrome-192x192.png",
+  },
+];
+
+const pastProjects = [
+  {
+    title: "Portfolio",
+    desc: "This portfolio is created with React",
+    image: "/android-chrome-192x192.png",
+  },
+  {
+    title: "Prez & Perm",
+    desc: "A website that was devloped for a friend. Makes use of React and intemplation of API's to recive videos",
+    image: "/android-chrome-192x192.png",
+  },
+];
 export default function Developer() {
   return (
-    <>
-      <h1>Developer page</h1>
-    </>
+    <div className="developer-page">
+      <h1>Developer</h1>
+
+      <PageHeader title="Current projects " />
+
+      <div className="currentGrid">
+        {currentProjects.map((project, index) => (
+          <Card
+            key={index}
+            desc={project.title}
+            alt={project.title}
+            image={project.image}
+            popupTitle={`${project.title}`}
+            popupDesc={project.desc}
+          />
+        ))}
+      </div>
+
+      <PageHeader title="Past projects" />
+
+      <div className="pastGrid">
+        {pastProjects.map((project, index) => (
+          <Card
+            key={index}
+            desc={project.title}
+            alt={project.title}
+            image={project.image}
+            popupTitle={`${project.title}`}
+            popupDesc={project.desc}
+          />
+        ))}
+      </div>
+      <div className="featured-project">
+        <h2>Flagship Project: Learneant</h2>
+        <p className="project-tagline">
+          <em>Currently in Architecture & Design Phase</em>
+        </p>
+        <p>
+          <strong>The Problem:</strong> Student productivity apps are
+          fragmented. You have a GPA calculator in one tab, a calendar in
+          another, and a to-do list in a third. The data never talks to each
+          other.
+        </p>
+        <p>
+          <strong>The Solution:</strong> I am architecting{" "}
+          <strong>Learneant</strong>
+          —a centralized "Productivity Ecosystem" for students. It is designed
+          to integrate academic tracking (GPA/Grades) with daily task
+          management, treating a student's career like a business operation.
+        </p>
+        <ul className="tech-stack-list">
+          <li>
+            <strong>Frontend:</strong> React (TSX) for a responsive,
+            mobile-first UI.
+          </li>
+          <li>
+            <strong>Backend:</strong> Python (FastAPI) for high-performance data
+            processing.
+          </li>
+          <li>
+            <strong>Database:</strong> SQL for structured academic data
+            management.
+          </li>
+          <li>
+            <strong>Goal:</strong> To bridge the gap between "getting grades"
+            and "managing time."
+          </li>
+        </ul>
+      </div>
+    </div>
   );
 }
