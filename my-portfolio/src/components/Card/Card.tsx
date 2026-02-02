@@ -31,7 +31,9 @@ export default function Card(props: cardProp) {
       <div className="course" onClick={handleClick}>
         <img src={props.image} alt={props.alt} className="course-image" />
 
-        <p className="course-desc">{props.desc}</p>
+        <p className="course-desc">
+          <strong>{props.desc}</strong>
+        </p>
       </div>
     </>
   );

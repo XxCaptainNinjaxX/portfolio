@@ -1,3 +1,8 @@
+import "./Musician.css";
+
+import PageHeader from "../../components/PageHeader/PageHeader";
+import Card from "../../components/Card/Card";
+
 export default function Musician() {
   return (
     <>

@@ -59,9 +59,7 @@ export default function Developer() {
       </div>
       <div className="featured-project">
         <h2>Flagship Project: Learneant</h2>
-        <p className="project-tagline">
-          <em>Currently in Architecture & Design Phase</em>
-        </p>
+
         <p>
           <strong>The Problem:</strong> Student productivity apps are
           fragmented. You have a GPA calculator in one tab, a calendar in
@@ -75,24 +73,6 @@ export default function Developer() {
           to integrate academic tracking (GPA/Grades) with daily task
           management, treating a student's career like a business operation.
         </p>
-        <ul className="tech-stack-list">
-          <li>
-            <strong>Frontend:</strong> React (TSX) for a responsive,
-            mobile-first UI.
-          </li>
-          <li>
-            <strong>Backend:</strong> Python (FastAPI) for high-performance data
-            processing.
-          </li>
-          <li>
-            <strong>Database:</strong> SQL for structured academic data
-            management.
-          </li>
-          <li>
-            <strong>Goal:</strong> To bridge the gap between "getting grades"
-            and "managing time."
-          </li>
-        </ul>
       </div>
     </div>
   );

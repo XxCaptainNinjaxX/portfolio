@@ -3,11 +3,14 @@ import { Routes, Route } from "react-router-dom";
 import { PopupProvider } from "./components/Pop-up/Pop-upContext";
 
 import Header from "./components/Header/Header";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
+import SplashCursor from "./components/background/splashCursor";
+
+import background from "./assets/images/four.jpg";
+
 import Home from "./pages/Home/Home";
 import Developer from "./pages/Developer/Developer";
 import Musician from "./pages/Musician/Musician";
-import SplashCursor from "./components/background/splashCursor";
-import background from "./assets/images/four.jpg";
 import Student from "./pages/Student/Student";
 
 export default function App() {
@@ -19,6 +22,7 @@ export default function App() {
 
   return (
     <PopupProvider>
+      <ScrollToTop />
       <div className="app-container">
         <div
           className="background-layer"

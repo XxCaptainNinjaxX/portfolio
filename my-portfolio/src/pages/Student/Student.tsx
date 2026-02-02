@@ -1,43 +1,58 @@
 import "./Student.css";
 
+import java from "../../assets/icons/png/java.png";
+import accounting from "../../assets/icons/png/balanceSheet.png";
+import business from "../../assets/icons/png/buisness.png";
+import calc from "../../assets/icons/png/calc.png";
+import english from "../../assets/icons/png/quill.png";
+import book from "../../assets/icons/png/001-book.png";
+import micro from "../../assets/icons/png/002-sale-tag.png";
+import mis from "../../assets/icons/png/003-data-storage.png";
+import stats from "../../assets/icons/png/005-scatter-graph.png";
+import cs114 from "../../assets/icons/png/004-algorithms.png";
+import law from "../../assets/icons/png/006-gavel.png";
+import python from "../../assets/icons/png/007-python.png";
+
 import PageHeader from "../../components/PageHeader/PageHeader";
 import Card from "../../components/Card/Card";
+
 const currentCourse = [
   {
     code: "CS 113",
     title: "Intro to Computer Science I",
     desc: "Starting from scratch to build the logic behind applications. I'm using Java to master the fundamentals of Object-Oriented Programming (OOP) so I can create code that is actually reusable and efficient.",
-    image: "/android-chrome-192x192.png",
+    image: java,
   },
   {
     code: "IS 117",
     title: "Intro to Website Development",
     desc: "Designing the 'face' of the web. I'm focusing on UI/UX principles with HTML5 and CSS3 because I believe a product is only as good as its user experience.",
-    image: "/android-chrome-192x192.png",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg",
   },
   {
     code: "ACCT 115",
     title: "Fundamentals of Accounting",
     desc: "Learning the scorecard of business. I'm analyzing balance sheets and cash flows to understand the financial reality behind the companies I plan to build for.",
-    image: "/android-chrome-192x192.png",
+    image: accounting,
   },
   {
     code: "MGMT 190",
     title: "Intro to Business",
     desc: "Looking at the big picture of the global economy. I'm studying how market structures and operational frameworks actually function so I can identify where technology fits in.",
-    image: "/android-chrome-192x192.png",
+    image: business,
   },
   {
     code: "ENGL 102",
     title: "Intro to Research Writing",
     desc: "Since the world never stops evolving, neither can we. I'm refining my ability to research complex topics—like AI ethics—and synthesize them into arguments that actually make sense.",
-    image: "/android-chrome-192x192.png",
+    image: english,
   },
   {
     code: "MATH 111",
     title: "Calculus 1",
     desc: "Building the mathematical intuition needed for quantitative analysis. I'm applying derivatives to model rates of change, which is the foundation of any financial optimization.",
-    image: "/android-chrome-192x192.png",
+    image: calc,
   },
 ];
 
@@ -46,37 +61,37 @@ const nextCourses = [
     code: "CS 114",
     title: "Intro to Computer Science II",
     desc: "Taking the training wheels off. I'll be diving deep into data structures like Trees and Stacks to ensure the software I build isn't just functional, but optimized for speed.",
-    image: "/android-chrome-192x192.png",
+    image: cs114,
   },
   {
     code: "MIS 245",
     title: "Mgmt. Information Systems",
     desc: "Bridging the gap between the code and the company. I'll be analyzing how enterprise systems like e-commerce and databases actually drive business value.",
-    image: "/android-chrome-192x192.png",
+    image: mis,
   },
   {
     code: "MGMT 116",
     title: "Quant. Analysis for Business",
     desc: "Moving from guessing to knowing. I'll be using statistical software and regression analysis to make decisions based on data rather than just intuition.",
-    image: "/android-chrome-192x192.png",
+    image: stats,
   },
   {
     code: "ECON 265",
     title: "Microeconomics",
     desc: "Understanding why people buy. I'll be analyzing consumer behavior and pricing strategies, which is critical for anyone trying to launch a product.",
-    image: "/android-chrome-192x192.png",
+    image: micro,
   },
   {
     code: "MGMT 290",
     title: "Business Law I",
     desc: "Protecting the product. I'll be learning the legal frameworks—from contracts to IP rights—that are necessary to operate a business safely.",
-    image: "/android-chrome-192x192.png",
+    image: law,
   },
   {
     code: "LIT 230",
     title: "Intro to Literature",
     desc: "Sharpening my critical thinking. Deconstructing complex narratives helps me better understand different perspectives and communicate ideas clearly.",
-    image: "/android-chrome-192x192.png",
+    image: book,
   },
 ];
 
@@ -85,7 +100,13 @@ const pastCourses = [
     code: "CS 100",
     title: "Roadmap to Computing",
     desc: "Where it started. I built my first scripts in Python and learned that coding is really just solving problems through logic and control structures.",
-    image: "/android-chrome-192x192.png",
+    image: python,
+  },
+  {
+    code: "ENGL 101",
+    title: "Introduction to Academic Writing",
+    desc: "something ",
+    image: english,
   },
 ];
 

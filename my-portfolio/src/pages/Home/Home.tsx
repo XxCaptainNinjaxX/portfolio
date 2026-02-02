@@ -5,6 +5,8 @@ import js from "../../assets/icons/png/js.png";
 import java from "../../assets/icons/png/java.png";
 import figma from "../../assets/icons/png/figma.png";
 import git from "../../assets/icons/png/github.png";
+import accounting from "../../assets/icons/png/balanceSheet.png";
+import calc from "../../assets/icons/png/calc.png";
 
 import Reveal from "../../components/background/Animation.tsx";
 import Card from "../../components/Card/Card.tsx";
@@ -69,21 +71,21 @@ export default function Home() {
             <Card
               desc="Intro to Comp Sci (Java)"
               alt="Java Code"
-              image="/android-chrome-192x192.png"
+              image={java}
               popupTitle="Intro to Computer Science (Java)"
               popupDesc="Building from my prior knowledge of Java, I am currently adding to it by taking a Java class. Touching back on the basics and diving deeper into the more intermediate side"
             />
             <Card
               desc="Accounting 1"
               alt="Accounting"
-              image="/android-chrome-192x192.png"
+              image={accounting}
               popupDesc="As I plan to go into the finance and buisness world, I am taking an Accounting class to begin that journey."
               popupTitle="Accounting 1"
             />
             <Card
               desc="Calculus 1"
               alt="Calculus"
-              image="/android-chrome-192x192.png"
+              image={calc}
               popupTitle="temp"
               popupDesc="temp"
             />
