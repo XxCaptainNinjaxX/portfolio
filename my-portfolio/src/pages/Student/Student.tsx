@@ -1,4 +1,4 @@
-import "./Student.css";
+import "../SubPage.css";
 
 import java from "../../assets/icons/png/java.png";
 import accounting from "../../assets/icons/png/balanceSheet.png";
@@ -15,7 +15,6 @@ import python from "../../assets/icons/png/007-python.png";
 
 import PageHeader from "../../components/PageHeader/PageHeader";
 import Card from "../../components/Card/Card";
-import { image } from "framer-motion/client";
 
 const currentCourse = [
   {
@@ -119,7 +118,7 @@ const pastCourses = [
   {
     code: "ENGL 101",
     title: "Introduction to Academic Writing",
-    desc: "something ",
+    desc: "The foundation of persuasion. I learned that having a great technical solution doesn't matter if you can't explain it. Focused on rhetoric and composition to ensure my ideas land as effectively as my code. ",
     image: english,
     imageLink: "https://catalog.njit.edu/search/?P=ENGL%20101",
   },

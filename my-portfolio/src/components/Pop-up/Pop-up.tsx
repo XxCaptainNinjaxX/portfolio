@@ -48,6 +48,7 @@ export default function Modal(props: ModalProps) {
           <button className="close-btn" onClick={props.onClose}>
             Close
           </button>
+          <span className="popup-instruction">Press ESC to close</span>
         </div>
       </motion.div>
     </div>

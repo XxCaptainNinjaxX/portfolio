@@ -5,6 +5,8 @@ interface cardProp {
   desc: string;
   alt: string;
   image: string;
+  popupImage?: string;
+
   popupTitle: string;
   popupDesc: string;
   imageLink?: string;
@@ -16,11 +18,13 @@ export default function Card(props: cardProp) {
 
   const handleClick = () => {
     if (props.popupTitle && props.popupDesc) {
+      const imageToShow = props.popupImage || props.image;
+
       openPopup(
         props.popupTitle,
         props.popupDesc,
         props.imageLink || "",
-        props.image,
+        imageToShow,
       );
     }
   };

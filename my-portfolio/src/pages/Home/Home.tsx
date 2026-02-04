@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import "./Home.css";
 
 import css from "../../assets/icons/png/css.png";
@@ -10,11 +11,16 @@ import calc from "../../assets/icons/png/calc.png";
 
 import prezPerm from "../../assets/images/prez&perm.png";
 import learneant from "../../assets/images/LearneantSketch.jpg";
+import njit from "../../assets/images/NJIT_Wind.png";
+import cabs from "../../assets/images/cabs.png";
+import orch from "../../assets/images/orch.png";
 
 import Reveal from "../../components/background/Animation.tsx";
 import Card from "../../components/Card/Card.tsx";
 import DownWaves from "../../components/Waves/DownWaves.tsx";
 import UpWaves from "../../components/Waves/UpWaves.tsx";
+
+import main1 from "../../assets/images/main1.jpg";
 
 const currentCourse = [
   {
@@ -55,9 +61,54 @@ const projects = [
   },
 ];
 
+const musician = [
+  {
+    title: "NJIT Wind Ensamble",
+    desc: "Currently, I operate as a Lead Trumpet and Soloist. However, effective leadership is about more than just volume and playing; it demands precision. That being said, I focus on blending my sound into the ensemble's architecture to ensure we create a remarkable performance rather than just a collection of individuals.",
+    image: njit,
+    imageLink: "https://theatre.njit.edu/music-ensemble-concerts",
+  },
+  {
+    title: "Hawthorne Caballeros DCI",
+    desc: "Joining the 'Major Leagues' of Marching Arts. I am proud to announce I will be marching with the Hawthorne Caballeros for the 2026 season, committing to the extreme discipline and physical excellence required at the world-class level.",
+    image: cabs,
+    imageLink: "https://hawthornecaballeros.org/",
+  },
+  {
+    title: "EHS Orchestra (Soloist+lead) ",
+    desc: "Performing high-stakes repertoire. I had the opportunity to perform complex works like the 'Overture from Carmen' and served as a featured soloist for the 'Medley from Chicago.' That being said, the experience taught me to maintain absolute focus and composure under the spotlight.",
+    image: orch,
+    imageLink: "https://youtu.be/avnEmxiU1Rg?si=18xroo0Zv099HeIO&t=2926",
+  },
+];
+
 export default function Home() {
+  const [isImageOpen, setIsImageOpen] = useState(false);
+
+  useEffect(() => {
+    const handleEsc = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setIsImageOpen(false);
+      }
+    };
+    window.addEventListener("keydown", handleEsc);
+    return () => window.removeEventListener("keydown", handleEsc);
+  }, []);
+
   return (
     <>
+      {isImageOpen && (
+        <div
+          className="image-modal-overlay"
+          onClick={() => setIsImageOpen(false)}
+        >
+          <div className="image-modal-content">
+            <img src={main1} alt="Full View" />
+            <span className="close-instruction">Press ESC to close</span>
+          </div>
+        </div>
+      )}
+
       <section className="name-split">
         {/* LEFT SIDE: Name */}
         <div className="name-text">
@@ -70,9 +121,10 @@ export default function Home() {
         {/* RIGHT SIDE: Image */}
         <div className="name-image-container">
           <img
-            src="/android-chrome-192x192.png"
+            src={main1}
             alt="Laptop and Trumpet icon"
-            className="main-name-img"
+            className="mainImg clickable-image"
+            onClick={() => setIsImageOpen(true)}
           />
         </div>
       </section>
@@ -152,20 +204,17 @@ export default function Home() {
         <Reveal className="music-section">
           <span className="musician">Musician</span>
           <div className="music-grid">
-            <Card
-              desc="NJIT Jazz Band"
-              alt="Jazz Band"
-              image="/android-chrome-192x192.png"
-              popupTitle="temp"
-              popupDesc="temp"
-            />
-            <Card
-              desc="Soloist Performance"
-              alt="Solo"
-              image="/android-chrome-192x192.png"
-              popupTitle="temp"
-              popupDesc="temp"
-            />
+            {musician.map((music, index) => (
+              <Card
+                key={index}
+                desc={music.title}
+                alt={music.title}
+                image={music.image}
+                popupTitle={`${music.title}`}
+                popupDesc={music.desc}
+                imageLink={music.imageLink}
+              />
+            ))}
           </div>
         </Reveal>
       </section>

@@ -1,4 +1,4 @@
-import "./Developer.css";
+import "../SubPage.css";
 
 import PageHeader from "../../components/PageHeader/PageHeader";
 import Card from "../../components/Card/Card";
@@ -9,7 +9,7 @@ import learneant from "../../assets/images/LearneantSketch.jpg";
 const currentProjects = [
   {
     title: "Learneant App",
-    desc: "A work in progress application. The 1 in all tool for students, a hub that entails GPA/Grade calculator, Calender, Notes app and alot more. All a student would need in their academic career.",
+    desc: "A work in progress application. The 1 in all tool for students, a hub that entails GPA/Grade calculator, Calender, Notes app and more. ALL, a student would need to be sucsessful in their academic career.",
     image: learneant,
     imageLink: "/",
   },
@@ -33,6 +33,19 @@ export default function Developer() {
   return (
     <div className="developer-page">
       <h1>Developer</h1>
+
+      <div className="page-intro">
+        <p>
+          For me, development is the only place where I can truly scratch my
+          creative itch. It’s the one discipline where I can start with nothing
+          but a blank screen and build a tangible solution that solves a
+          real-world problem. However, I’ve realized that I don't just want to
+          write code in a vacuum. That being said,{" "}
+          <strong> my goal is to become a Solutions Engineer,</strong> combining
+          this creative drive with technical architecture to build products that
+          don't just work, but actually solve the user's problem
+        </p>
+      </div>
 
       <PageHeader title="Current projects " />
 
@@ -64,23 +77,6 @@ export default function Developer() {
             imageLink={project.imageLink}
           />
         ))}
-      </div>
-      <div className="featured-project">
-        <h2>Flagship Project: Learneant</h2>
-
-        <p>
-          <strong>The Problem:</strong> Student productivity apps are
-          fragmented. You have a GPA calculator in one tab, a calendar in
-          another, and a to-do list in a third. The data never talks to each
-          other.
-        </p>
-        <p>
-          <strong>The Solution:</strong> I am architecting{" "}
-          <strong>Learneant</strong>
-          —a centralized "Productivity Ecosystem" for students. It is designed
-          to integrate academic tracking (GPA/Grades) with daily task
-          management, treating a student's career like a business operation.
-        </p>
       </div>
     </div>
   );
