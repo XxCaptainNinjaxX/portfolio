@@ -7,13 +7,7 @@ interface cardProp {
   image: string;
   popupTitle: string;
   popupDesc: string;
-
-  /* 
-  int = "number", 
-  float = "number"
-  img/file = "string" (cause we type the path)
-
-  */
+  imageLink?: string;
   onClick?: () => void;
 }
 
@@ -22,7 +16,12 @@ export default function Card(props: cardProp) {
 
   const handleClick = () => {
     if (props.popupTitle && props.popupDesc) {
-      openPopup(props.popupTitle, props.popupDesc);
+      openPopup(
+        props.popupTitle,
+        props.popupDesc,
+        props.imageLink || "",
+        props.image,
+      );
     }
   };
 
@@ -30,10 +29,7 @@ export default function Card(props: cardProp) {
     <>
       <div className="course" onClick={handleClick}>
         <img src={props.image} alt={props.alt} className="course-image" />
-
-        <p className="course-desc">
-          <strong>{props.desc}</strong>
-        </p>
+        <p className="course-desc">{props.desc}</p>
       </div>
     </>
   );

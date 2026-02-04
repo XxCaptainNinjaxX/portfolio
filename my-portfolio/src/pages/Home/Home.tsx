@@ -8,10 +8,52 @@ import git from "../../assets/icons/png/github.png";
 import accounting from "../../assets/icons/png/balanceSheet.png";
 import calc from "../../assets/icons/png/calc.png";
 
+import prezPerm from "../../assets/images/prez&perm.png";
+import learneant from "../../assets/images/LearneantSketch.jpg";
+
 import Reveal from "../../components/background/Animation.tsx";
 import Card from "../../components/Card/Card.tsx";
 import DownWaves from "../../components/Waves/DownWaves.tsx";
 import UpWaves from "../../components/Waves/UpWaves.tsx";
+
+const currentCourse = [
+  {
+    code: "CS 113",
+    title: "Intro to Computer Science I",
+    desc: "Starting from scratch to build the logic behind applications. I'm using Java to master the fundamentals of Object-Oriented Programming (OOP) so I can create code that is actually reusable and efficient.",
+    image: java,
+    imageLink: "https://catalog.njit.edu/search/?P=CS%20113",
+  },
+  {
+    code: "ACCT 115",
+    title: "Fundamentals of Accounting",
+    desc: "Learning the scorecard of business. I'm analyzing balance sheets and cash flows to understand the financial reality behind the companies I plan to build for.",
+    image: accounting,
+    imageLink: "https://catalog.njit.edu/search/?P=ACCT%20115",
+  },
+  {
+    code: "MATH 111",
+    title: "Calculus 1",
+    desc: "Building the mathematical intuition needed for quantitative analysis. I'm applying derivatives to model rates of change, which is the foundation of any financial optimization.",
+    image: calc,
+    imageLink: "https://catalog.njit.edu/search/?P=MATH%20111",
+  },
+];
+
+const projects = [
+  {
+    title: "Learneant App",
+    desc: "A work in progress application. The 1 in all tool for students, a hub that entails GPA/Grade calculator, Calender, Notes app and alot more. All a student would need in their academic career.",
+    image: learneant,
+    imageLink: "",
+  },
+  {
+    title: "Prez & Perm",
+    desc: "A website that was devloped for a friend. Makes use of React and intemplation of API's to recive videos",
+    image: prezPerm,
+    imageLink: "https://robriguez.com/projects/prez&perm/index.html",
+  },
+];
 
 export default function Home() {
   return (
@@ -68,27 +110,17 @@ export default function Home() {
         <Reveal className="edu-section">
           <span className="student">Student </span>
           <div className="course-grid">
-            <Card
-              desc="Intro to Comp Sci (Java)"
-              alt="Java Code"
-              image={java}
-              popupTitle="Intro to Computer Science (Java)"
-              popupDesc="Building from my prior knowledge of Java, I am currently adding to it by taking a Java class. Touching back on the basics and diving deeper into the more intermediate side"
-            />
-            <Card
-              desc="Accounting 1"
-              alt="Accounting"
-              image={accounting}
-              popupDesc="As I plan to go into the finance and buisness world, I am taking an Accounting class to begin that journey."
-              popupTitle="Accounting 1"
-            />
-            <Card
-              desc="Calculus 1"
-              alt="Calculus"
-              image={calc}
-              popupTitle="temp"
-              popupDesc="temp"
-            />
+            {currentCourse.map((course, index) => (
+              <Card
+                key={index}
+                desc={course.title}
+                alt={course.title}
+                image={course.image}
+                popupTitle={`${course.title} (${course.code})`}
+                popupDesc={course.desc}
+                imageLink={course.imageLink}
+              />
+            ))}
           </div>
         </Reveal>
 
@@ -99,20 +131,17 @@ export default function Home() {
         <Reveal className="dev-section">
           <span className="developer">Developer</span>
           <div className="project-grid">
-            <Card
-              desc="Learneant App"
-              alt="Productivity App"
-              image="/android-chrome-192x192.png"
-              popupTitle="Learneant"
-              popupDesc="A work in progress application. The 1 in all tool for students, a hub that entails GPA/Grade calculator, Calender, Notes app and alot more. All a student would need in their academic career."
-            />
-            <Card
-              desc="Prez & Perm"
-              alt="Friend's Website"
-              image="/android-chrome-192x192.png"
-              popupDesc="A website that was devloped for a friend. Makes use of React and intemplation of API's to recive videos"
-              popupTitle="Prez & Perm"
-            />
+            {projects.map((project, index) => (
+              <Card
+                key={index}
+                desc={project.title}
+                alt={project.title}
+                image={project.image}
+                popupTitle={`${project.title}`}
+                popupDesc={project.desc}
+                imageLink={project.imageLink}
+              />
+            ))}
           </div>
         </Reveal>
 

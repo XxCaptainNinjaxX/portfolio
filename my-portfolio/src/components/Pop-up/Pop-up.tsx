@@ -5,6 +5,8 @@ import { useEffect } from "react";
 interface ModalProps {
   content: string;
   title: string;
+  picture: string;
+  imageLink: string;
   onClose: () => void;
 }
 
@@ -16,7 +18,8 @@ export default function Modal(props: ModalProps) {
       }
     };
     window.addEventListener("keydown", escKey);
-  });
+    return () => window.removeEventListener("keydown", escKey);
+  }, [props]);
 
   return (
     <div className="blur-overlay" onClick={props.onClose}>
@@ -29,8 +32,14 @@ export default function Modal(props: ModalProps) {
       >
         <div className="popup-header">
           <h2>{props.title}</h2>
+
+          {props.picture && (
+            <a href={props.imageLink} target="_blank" rel="noopener noreferrer">
+              <img src={props.picture} alt={props.title} className="image" />
+            </a>
+          )}
         </div>
-        <br />
+
         <div className="popup-body">
           <p>{props.content}</p>
         </div>

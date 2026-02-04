@@ -3,11 +3,15 @@ import "./Developer.css";
 import PageHeader from "../../components/PageHeader/PageHeader";
 import Card from "../../components/Card/Card";
 
+import prezPerm from "../../assets/images/prez&perm.png";
+import learneant from "../../assets/images/LearneantSketch.jpg";
+
 const currentProjects = [
   {
     title: "Learneant App",
     desc: "A work in progress application. The 1 in all tool for students, a hub that entails GPA/Grade calculator, Calender, Notes app and alot more. All a student would need in their academic career.",
-    image: "/android-chrome-192x192.png",
+    image: learneant,
+    imageLink: "/",
   },
 ];
 
@@ -16,11 +20,13 @@ const pastProjects = [
     title: "Portfolio",
     desc: "This portfolio is created with React",
     image: "/android-chrome-192x192.png",
+    imageLink: "/",
   },
   {
     title: "Prez & Perm",
     desc: "A website that was devloped for a friend. Makes use of React and intemplation of API's to recive videos",
-    image: "/android-chrome-192x192.png",
+    image: prezPerm,
+    imageLink: "https://robriguez.com/projects/prez&perm/index.html",
   },
 ];
 export default function Developer() {
@@ -37,8 +43,9 @@ export default function Developer() {
             desc={project.title}
             alt={project.title}
             image={project.image}
-            popupTitle={`${project.title}`}
+            popupTitle={project.title}
             popupDesc={project.desc}
+            imageLink={project.imageLink}
           />
         ))}
       </div>
@@ -54,6 +61,7 @@ export default function Developer() {
             image={project.image}
             popupTitle={`${project.title}`}
             popupDesc={project.desc}
+            imageLink={project.imageLink}
           />
         ))}
       </div>
