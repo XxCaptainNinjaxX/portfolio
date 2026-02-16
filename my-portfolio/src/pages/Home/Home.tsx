@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
+
 import "./Home.css";
 
 import css from "../../assets/icons/png/css.png";
@@ -160,7 +162,9 @@ export default function Home() {
       <section className="about-me">
         {/*STUDENT SECTION */}
         <Reveal className="edu-section">
-          <span className="student">Student </span>
+          <NavLink to="/student">
+            <span className="student">Student </span>
+          </NavLink>
           <div className="course-grid">
             {currentCourse.map((course, index) => (
               <Card
@@ -181,7 +185,9 @@ export default function Home() {
 
         {/* DEVELOPER SECTION  */}
         <Reveal className="dev-section">
-          <span className="developer">Developer</span>
+          <NavLink to="/developer">
+            <span className="developer">Developer</span>
+          </NavLink>
           <div className="project-grid">
             {projects.map((project, index) => (
               <Card
@@ -202,7 +208,9 @@ export default function Home() {
 
         {/* MUSICIAN SECTION  */}
         <Reveal className="music-section">
-          <span className="musician">Musician</span>
+          <NavLink to="/musician">
+            <span className="musician">Musician</span>
+          </NavLink>
           <div className="music-grid">
             {musician.map((music, index) => (
               <Card

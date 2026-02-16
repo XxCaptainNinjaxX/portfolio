@@ -65,7 +65,7 @@ export default function Header({ isSplashOn, toggleSplash }: HeaderProps) {
             <FaLinkedinIn />
           </a>
           <a
-            href="../../../public/Roberto Rodriguez's Resume.pdf"
+            href="../../../Roberto Rodriguez's Resume.pdf"
             download="Roberto Rodriguez's Resume.pdf"
             className="resume-btn"
             target="_blank"

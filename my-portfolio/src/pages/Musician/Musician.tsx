@@ -73,6 +73,14 @@ export default function Musician() {
           determination I forged here is the foundation of my work ethic—proving
           that elite results require elite preparation, no matter the field.
         </p>
+        {""}
+        <a
+          href="https://www.instagram.com/trump3t_guy/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Instagram
+        </a>
       </div>
 
       <PageHeader title="Current Ensambles " />
