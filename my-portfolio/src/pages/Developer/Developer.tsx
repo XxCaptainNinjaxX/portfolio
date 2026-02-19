@@ -26,7 +26,7 @@ const pastProjects = [
     title: "Prez & Perm",
     desc: "A website that was devloped for a friend. Makes use of React and intemplation of API's to recive videos",
     image: prezPerm,
-    imageLink: "https://robriguez.com/projects/prez&perm/index.html",
+    imageLink: "https://robriguez.com/projects/Prez-Perm",
   },
 ];
 export default function Developer() {
