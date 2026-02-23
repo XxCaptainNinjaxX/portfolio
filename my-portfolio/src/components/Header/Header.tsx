@@ -25,7 +25,10 @@ export default function Header({ isSplashOn, toggleSplash }: HeaderProps) {
         </div>
 
         <div className="contact-info">
-          <span className="contact-label">Contact Me</span>
+          <span className="contact-label">
+            Contact<span className="desktop-text"> Me</span>
+            <span className="mobile-text">:</span>
+          </span>
           <a href="mailto:roberiguez3@gmail.com" className="contact-email">
             roberiguez3@gmail.com
           </a>

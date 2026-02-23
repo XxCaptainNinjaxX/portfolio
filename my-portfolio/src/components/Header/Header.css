@@ -196,3 +196,51 @@
     10px 10px 10px rgba(0, 0, 0, 0.3);
   transition: 0.4s;
 }
+
+@media (max-width: 900px) {
+  .header-top {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .contact-info {
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    gap: 6px;
+  }
+
+  .desktop-text {
+    display: none;
+  }
+  .mobile-text {
+    display: inline;
+  }
+
+  .header-bottom {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav-links {
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .nav-links a {
+    font-size: 0.85rem;
+    white-space: nowrap;
+  }
+
+  .social-icons {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .resume-btn {
+    margin-right: 0;
+  }
+}
