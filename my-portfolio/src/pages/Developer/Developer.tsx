@@ -2,33 +2,8 @@ import "../SubPage.css";
 
 import PageHeader from "../../components/PageHeader/PageHeader";
 import Card from "../../components/Card/Card";
+import { pastProjects, currentProjects } from "../../components/Data/data";
 
-import prezPerm from "../../assets/images/prez&perm.png";
-import learneant from "../../assets/images/LearneantSketch.jpg";
-
-const currentProjects = [
-  {
-    title: "Learneant App",
-    desc: "A work in progress application. The 1 in all tool for students, a hub that entails GPA/Grade calculator, Calender, Notes app and more. ALL, a student would need to be sucsessful in their academic career.",
-    image: learneant,
-    imageLink: "/",
-  },
-];
-
-const pastProjects = [
-  {
-    title: "Portfolio",
-    desc: "This portfolio is created with React",
-    image: "/android-chrome-192x192.png",
-    imageLink: "/",
-  },
-  {
-    title: "Prez & Perm",
-    desc: "A website that was devloped for a friend. Makes use of React and intemplation of API's to recive videos",
-    image: prezPerm,
-    imageLink: "https://robriguez.com/projects/Prez-Perm",
-  },
-];
 export default function Developer() {
   return (
     <div className="developer-page">

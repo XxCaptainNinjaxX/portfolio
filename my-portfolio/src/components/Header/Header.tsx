@@ -12,11 +12,13 @@ export default function Header({ isSplashOn, toggleSplash }: HeaderProps) {
     <header className="portfolio-header">
       <div className="header-top">
         <div className="brand">
-          <img
-            src="/android-chrome-192x192.png"
-            alt="Logo"
-            className="brand-logo"
-          />
+          <NavLink to="/" className="brand-link">
+            <img
+              src="/android-chrome-192x192.png"
+              alt="Robert Rodriguez Logo"
+              className="brand-logo"
+            />
+          </NavLink>
 
           <div className="brand-text">
             <h1>Robert Rodriguez</h1>
