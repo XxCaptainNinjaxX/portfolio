@@ -1,29 +1,16 @@
-.wave1 {
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-  line-height: 0;
+:root {
+  --waveColor: #af2fa4;
 }
 
-.wave1 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 140px;
-}
-
-.wave1 .shape-fill {
-  fill: #ffffff;
-}
-/* -------------------------------------------------- */
+.wave1,
 .wave2 {
   width: 100%;
   position: relative;
   overflow: hidden;
   line-height: 0;
-  transform: rotate(180deg);
 }
 
+.wave1 svg,
 .wave2 svg {
   position: relative;
   display: block;
@@ -31,8 +18,13 @@
   height: 140px;
 }
 
+.wave1 .shape-fill,
 .wave2 .shape-fill {
-  fill: #ffffff;
+  fill: var(--waveColor);
+}
+/* -------------------------------------------------- */
+.wave2 {
+  transform: rotate(180deg);
 }
 
 /* 

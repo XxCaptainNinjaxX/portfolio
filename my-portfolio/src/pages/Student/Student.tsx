@@ -15,19 +15,19 @@ export default function Student() {
       <h1>Student</h1>
       <div className="page-intro">
         <p>
-          For as long as I can remember, I've always loved creating whether it
-          was stories, Legos, or now, software. I realized that while code is
-          powerful, AI is evolving quickly. That being said, I switched my focus
-          from CS major with intent of becoming software engineer to a Solutions
-          Engineer/Architect. My goal is to leverage my background in
-          programming with the knowledge I am learning about business and
-          finance to bridge the gap between complex financial systems and
-          user-friendly solutions.
+          I’ve always loved the process of creating, whether it was building
+          with Legos as a kid or writing software today. But over time, I
+          realized that just writing code wasn't enough for me. It’s a lot like
+          looking at a brand new piece of music—without direction, it’s just a
+          sea of scattered notes. That’s why I shifted my focus from pure
+          Computer Science to Product Management. I want to be the one putting
+          all the small pieces together, bridging the gap between raw code and
+          actual solutions that help people.
         </p>
         <p>
-          Today, I am currently at NJIT as I pursue my{" "}
-          <strong> B.S in Financial Technology </strong> with a minor in{" "}
-          <strong> Computer Science </strong> in hopes to graduate by 2029.
+          Currently, I am a Freshman at NJIT pursuing my{" "}
+          <strong>B.S. in Management Information Systems</strong> with a minor
+          in <strong>Computer Science</strong>, graduating in 2029.
         </p>
       </div>
 

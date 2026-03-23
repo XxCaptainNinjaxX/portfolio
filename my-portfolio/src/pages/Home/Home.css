@@ -1,3 +1,7 @@
+:root {
+  --mainColor: #ffffff;
+}
+
 .name-split {
   display: flex;
   align-items: center;
@@ -20,7 +24,7 @@
   font-size: clamp(3.5rem, 6vw + 1rem, 7rem);
   font-weight: 500;
   line-height: 1.1;
-  color: #000000;
+  color: var(--mainColor);
   font-family: Elms Sans;
 }
 
@@ -53,7 +57,7 @@
   justify-content: center;
   border-bottom: transparent;
   font-family: monospace;
-  color: #555;
+  color: #959393;
   margin: 20px 0;
 }
 
@@ -120,7 +124,7 @@
   font-size: clamp(3.5rem, 6vw + 1rem, 7rem);
   font-weight: 500;
   line-height: 1.1;
-  color: #000;
+  color: var(--mainColor);
   font-family: Elms Sans;
   flex: 1;
   margin: 0;
@@ -140,6 +144,7 @@
   padding-bottom: 20px;
   padding-left: 10px;
   padding-right: 10px;
+  color: var(--mainColor);
 }
 
 .student,

@@ -1,3 +1,8 @@
+:root {
+  --bgColor: #1e003c;
+  --textColor: #ffffff;
+}
+
 .blur-overlay {
   position: fixed;
   top: 0;
@@ -16,7 +21,7 @@
 }
 
 .popup-box {
-  background: rgba(255, 255, 255, 0.95);
+  background: var(--bgColor);
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 
@@ -36,7 +41,7 @@
 .popup-header h2 {
   margin: 0;
   font-size: 1.8rem;
-  color: #333;
+  color: var(--textColor);
   font-weight: 600;
 }
 
@@ -46,7 +51,7 @@
 }
 
 .popup-body p {
-  color: #555;
+  color: var(--textColor);
   font-size: 1.1rem;
   line-height: 1.6;
   margin: 0;
@@ -54,7 +59,7 @@
 
 .popup-footer {
   padding: 20px 40px;
-  background: #f9f9f9;
+  background: var(--bgColor);
   border-top: 1px solid #eee;
   display: flex;
   flex-direction: column;
@@ -65,7 +70,7 @@
 
 .close-btn {
   background-color: #000;
-  color: #fff;
+  color: var(--textColor);
   border: none;
   padding: 12px 30px;
   border-radius: 12px;

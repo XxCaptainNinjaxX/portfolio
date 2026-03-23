@@ -1,8 +1,13 @@
+:root {
+  --mainColor: #ffffff;
+}
+
 h1 {
   text-align: center;
   padding-top: 0;
   margin-bottom: 20px;
   font-size: 3rem;
+  color: var(--mainColor);
 }
 
 .currentGrid,
@@ -17,6 +22,7 @@ h1 {
   max-width: 3000px;
   margin: 0 auto;
   box-sizing: border-box;
+  color: var(--mainColor);
 }
 
 .page-intro {
@@ -29,6 +35,6 @@ h1 {
 .page-intro p {
   font-size: 1.1rem;
   line-height: 1.6;
-  color: #444;
+  color: #d7d3d3;
   margin-bottom: 15px;
 }

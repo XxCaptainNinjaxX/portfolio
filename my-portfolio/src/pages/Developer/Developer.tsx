@@ -11,14 +11,14 @@ export default function Developer() {
 
       <div className="page-intro">
         <p>
-          For me, development is the only place where I can truly scratch my
-          creative itch. It’s the one discipline where I can start with nothing
-          but a blank screen and build a tangible solution that solves a
-          real-world problem. However, I’ve realized that I don't just want to
-          write code in a vacuum. That being said,{" "}
-          <strong> my goal is to become a Solutions Engineer,</strong> combining
-          this creative drive with technical architecture to build products that
-          don't just work, but actually solve the user's problem
+          Development is the one place where I can start with a completely blank
+          screen and build something real, line by line and measure by measure.
+          But I don't want to just write code in a vacuum. My goal is to step
+          into Product Management and Technical Architecture. I want to take all
+          the challenges and curveballs of a project and manage them into a
+          product that actually solves a user's problem. I know firsthand that
+          elite results require elite preparation, and that is exactly how I
+          approach every project I build.
         </p>
       </div>
 

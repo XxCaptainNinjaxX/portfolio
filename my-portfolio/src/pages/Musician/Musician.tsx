@@ -12,17 +12,15 @@ export default function Musician() {
 
       <div className="page-intro">
         <p>
-          To be honest, nothing has shaped who I am today more than music. It
-          taught me that talent means nothing without the resilience to push
-          through the hard times. From the practice room to the field, and
-          ruthless competition,{" "}
-          <strong>
-            I learned that true leadership is about accountability, patience,
-            and the grit{" "}
-          </strong>{" "}
-          to keep going when things get tough. That being said, the
-          determination I forged here is the foundation of my work ethic—proving
-          that elite results require elite preparation, no matter the field.
+          Nothing has shaped me more than my time in competitive marching band
+          and drum corps. It has been a complete rollercoaster of frustration,
+          discovery, and joy. Enduring the ruthless expectations of that
+          environment taught me that talent means nothing without grit. From
+          running laps under the harsh sun to performing under the bright lights
+          of MetLife Stadium, I learned that true leadership is about patience,
+          accountability, and being the person your team can lean on when things
+          get tough. That same determination is the foundation of my work ethic
+          today.
         </p>
         {""}
         <a
