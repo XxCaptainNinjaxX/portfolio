@@ -17,8 +17,6 @@ Stack: Vite + React 19 + TypeScript, react-router-dom v7 (`BrowserRouter`),
 framer-motion, react-icons. Personal portfolio SPA, four routes, all content
 static.
 
-- NEVER create a git commit for me, always allow me to create it
-
 ## Deployment — violating these breaks the live site
 
 Production is a manual upload of `dist/` over FTP to an Apache host. There is
@@ -139,7 +137,7 @@ the matching `*Home` array also needs updating.
   build passes. Run `npm run lint` too if you touched more than one file.
 - **There are no tests.** Do not claim anything is "verified" or "tested."
   If a change needs manual checking in the browser, say exactly what to click.
-- **Do not commit.** No `git commit`, `git push`, `git checkout`, no staging.
+- **Do not commit.** NO `git commit`, `git push`, `git checkout`, no staging.
   I handle version control.
 - **Do not modify** `package.json`, `tsconfig*.json`, `vite.config.ts`,
   `eslint.config.js`, or `.htaccess` without flagging it as its own decision

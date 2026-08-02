@@ -31,7 +31,10 @@ export default function Header({ isSplashOn, toggleSplash }: HeaderProps) {
             Contact<span className="desktop-text"> Me</span>
             <span className="mobile-text">:</span>
           </span>
-          <a href="mailto:roberiguez3@gmail.com" className="contact-email">
+          <a
+            href="mailto:roberiguez3@gmail.com?subject=New%20Hire&body=Hello%20Robert!%0D%0AWe%20are%20pleased%20to%20announce%20that%20we%20here%20at%20[insert%20company%20name]%20have%20selected%20you%20as%20the%20new%20hire%20for%20this%20extraordinary%20program!%0D%0AWe%20hope%20to%20see%20you%20here%20tomorrow."
+            className="contact-email"
+          >
             roberiguez3@gmail.com
           </a>
         </div>
@@ -50,16 +53,6 @@ export default function Header({ isSplashOn, toggleSplash }: HeaderProps) {
 
         {/* Socials */}
         <div className="social-icons">
-          <a
-            href="#"
-            className="icon-box"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="Facebook"
-          >
-            <FaFacebookF />
-          </a>
-
           <a
             href="https://www.linkedin.com/in/roberto-rodriguez-bb7910374/"
             className="icon-box"
