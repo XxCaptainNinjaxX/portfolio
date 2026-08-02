@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
 import "./Header.css";
 
 interface HeaderProps {
