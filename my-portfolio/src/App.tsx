@@ -5,6 +5,7 @@ import { Routes, Route } from "react-router-dom";
 import { PopupProvider } from "./components/Pop-up/Pop-upContext";
 
 import Header from "./components/Header/Header";
+import ScrollBlur from "./components/ScrollBlur/ScrollBlur";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import SplashCursor from "./components/background/splashCursor";
 
@@ -39,6 +40,8 @@ export default function App() {
             <Route path="/musician" element={<Musician />} />
           </Routes>
         </main>
+
+        <ScrollBlur />
       </div>
     </PopupProvider>
   );

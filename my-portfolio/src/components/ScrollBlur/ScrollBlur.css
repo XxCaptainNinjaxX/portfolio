@@ -1,0 +1,82 @@
+.scroll-blur {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 220px;
+  z-index: 500;
+
+  /* Must never eat clicks on the nav or on content beneath it. */
+  pointer-events: none;
+
+  /* One promotion for the whole overlay, not per-layer, not global. */
+  transform: translateZ(0);
+}
+
+.scroll-blur-layer,
+.scroll-blur-tint {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Later siblings paint on top. Each layer masks out sooner than the one
+   before it, so the blur radii accumulate toward the top of the strip. */
+@supports (backdrop-filter: blur(1px)) or
+  (-webkit-backdrop-filter: blur(1px)) {
+  .scroll-blur-near {
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    -webkit-mask-image: linear-gradient(
+      to bottom,
+      #000 0%,
+      #000 55%,
+      transparent 100%
+    );
+    mask-image: linear-gradient(to bottom, #000 0%, #000 55%, transparent 100%);
+  }
+
+  .scroll-blur-mid {
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    -webkit-mask-image: linear-gradient(
+      to bottom,
+      #000 0%,
+      #000 25%,
+      transparent 70%
+    );
+    mask-image: linear-gradient(to bottom, #000 0%, #000 25%, transparent 70%);
+  }
+
+  .scroll-blur-far {
+    -webkit-backdrop-filter: blur(14px);
+    backdrop-filter: blur(14px);
+    -webkit-mask-image: linear-gradient(
+      to bottom,
+      #000 0%,
+      #000 5%,
+      transparent 45%
+    );
+    mask-image: linear-gradient(to bottom, #000 0%, #000 5%, transparent 45%);
+  }
+}
+
+/* Faint darkening so white nav text survives a bright image scrolling
+   under it. Painted above the blur layers so it is not itself re-blurred. */
+.scroll-blur-tint {
+  background: linear-gradient(
+    to bottom,
+    rgba(36, 36, 36, 0.15) 0%,
+    transparent 75%
+  );
+}
+
+/* The nav stacks to a taller column layout at this width, so the blur zone
+   grows with it. Matches the existing Header.css breakpoint. */
+@media (max-width: 900px) {
+  .scroll-blur {
+    height: 280px;
+  }
+}
