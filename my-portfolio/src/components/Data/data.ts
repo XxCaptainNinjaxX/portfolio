@@ -10,6 +10,11 @@ import marchingEns from "../../assets/images/marchingEns.png";
 import marchingSolo from "../../assets/images/MarchingSS.png";
 
 import java from "../../assets/icons/png/java.png";
+import css from "../../assets/icons/png/css.png";
+import js from "../../assets/icons/png/js.png";
+import figma from "../../assets/icons/png/figma.png";
+import git from "../../assets/icons/png/github.png";
+import ts from "../../assets/icons/png/typescript.png";
 import accounting from "../../assets/icons/png/balanceSheet.png";
 import business from "../../assets/icons/png/buisness.png";
 import calc from "../../assets/icons/png/calc.png";
@@ -262,5 +267,58 @@ export const musicianHome = [
     desc: "Performed complex works like the 'Overture from Carmen' and featured as a soloist for the 'Medley from Chicago.' High-stakes performances forge absolute focus under pressure.",
     image: orch,
     imageLink: "https://youtu.be/avnEmxiU1Rg?si=18xroo0Zv099HeIO&t=2926",
+  },
+];
+
+//--------------- Home Page: Skills -----------
+
+export const skills = [
+  {
+    title: "HTML",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg",
+    imageLink: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+  },
+  {
+    title: "CSS",
+    image: css,
+    imageLink: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+  },
+  {
+    title: "Tailwind",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+    imageLink: "https://tailwindcss.com/",
+  },
+  {
+    title: "JavaScript",
+    image: js,
+    imageLink: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+  },
+  {
+    title: "TypeScript",
+    image: ts,
+    imageLink: "https://www.typescriptlang.org/",
+  },
+  {
+    title: "React",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+    imageLink: "https://react.dev/",
+  },
+  {
+    title: "Java",
+    image: java,
+    imageLink: "https://www.oracle.com/java/",
+  },
+  {
+    title: "Figma",
+    image: figma,
+    imageLink: "https://www.figma.com/",
+  },
+  {
+    title: "Git",
+    image: git,
+    imageLink: "https://github.com/",
   },
 ];
