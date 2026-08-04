@@ -1,10 +1,6 @@
 import "../SubPage.css";
 
-import {
-  currentCourse,
-  nextCourses,
-  pastCourses,
-} from "../../components/Data/data";
+import { currentCourse } from "../../components/Data/data";
 
 import PageHeader from "../../components/PageHeader/PageHeader";
 import Card from "../../components/Card/Card";
@@ -31,42 +27,10 @@ export default function Student() {
         </p>
       </div>
 
-      <PageHeader title="Current Courses (Spring 2026)" />
+      <PageHeader title="Note Worthy Courses Previously taken" />
 
       <div className="currentGrid">
         {currentCourse.map((course, index) => (
-          <Card
-            key={index}
-            desc={course.title}
-            alt={course.title}
-            image={course.image}
-            popupTitle={`${course.title} (${course.code})`}
-            popupDesc={course.desc}
-            imageLink={course.imageLink}
-          />
-        ))}
-      </div>
-
-      <PageHeader title="Next Semester Courses (Fall 2026)" />
-
-      <div className="nextGrid">
-        {nextCourses.map((course, index) => (
-          <Card
-            key={index}
-            desc={course.title}
-            alt={course.title}
-            image={course.image}
-            popupTitle={`${course.title} (${course.code})`}
-            popupDesc={course.desc}
-            imageLink={course.imageLink}
-          />
-        ))}
-      </div>
-
-      <PageHeader title="Past Courses" />
-
-      <div className="pastGrid">
-        {pastCourses.map((course, index) => (
           <Card
             key={index}
             desc={course.title}

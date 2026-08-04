@@ -1,0 +1,23 @@
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* above the header (999), ScrollBlur (500), Pop-up (1000)
+     and the Home image modal (9999) */
+  z-index: 10000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #242424;
+}
+
+.preloader-count {
+  font-size: 3rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: #d7d3d3;
+}

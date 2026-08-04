@@ -102,13 +102,6 @@ export const pastEnsembles = [
 
 export const currentCourse = [
   {
-    code: "CS 113",
-    title: "Intro to Computer Science I",
-    desc: "Mastering the fundamentals of Object-Oriented Programming (OOP) in Java. Focused on building application logic measure by measure to create reusable, efficient code.",
-    image: java,
-    imageLink: "https://catalog.njit.edu/search/?P=CS%20113",
-  },
-  {
     code: "IS 117",
     title: "Intro to Website Development",
     desc: "Designing the front-end of the web using HTML5 and CSS3. Emphasizes UI/UX principles, because a technical solution is only as good as its user experience.",
@@ -144,9 +137,13 @@ export const currentCourse = [
     image: calc,
     imageLink: "https://catalog.njit.edu/search/?P=MATH%20111",
   },
-];
-
-export const nextCourses = [
+  {
+    code: "CS 113",
+    title: "Intro to Computer Science I",
+    desc: "Mastering the fundamentals of Object-Oriented Programming (OOP) in Java. Focused on building application logic measure by measure to create reusable, efficient code.",
+    image: java,
+    imageLink: "https://catalog.njit.edu/search/?P=CS%20113",
+  },
   {
     code: "CS 114",
     title: "Intro to Computer Science II",
@@ -154,6 +151,37 @@ export const nextCourses = [
     image: cs114,
     imageLink: "https://catalog.njit.edu/search/?P=CS%20114",
   },
+  {
+    code: "ECON 265",
+    title: "Microeconomics",
+    desc: "Analyzing consumer behavior and pricing strategies. Understanding why people make economic choices is critical when developing and launching a product.",
+    image: micro,
+    imageLink: "https://catalog.njit.edu/search/?P=ECON%20265",
+  },
+  {
+    code: "ECON 266",
+    title: "Macroeconomics",
+    desc: "----------.",
+    image: micro,
+    imageLink: "https://catalog.njit.edu/search/?P=ECON%20266",
+  },
+  {
+    code: "ECON 265",
+    title: "Intro to information systems",
+    desc: "----------.",
+    image: micro,
+    imageLink: "--------",
+  },
+  {
+    code: "ECON 265",
+    title: "Intro to information systems",
+    desc: "----------.",
+    image: micro,
+    imageLink: "--------",
+  },
+];
+
+export const nextCourses = [
   {
     code: "MIS 245",
     title: "Mgmt. Information Systems",
@@ -168,13 +196,7 @@ export const nextCourses = [
     image: stats,
     imageLink: "https://catalog.njit.edu/search/?P=MGMT%20116",
   },
-  {
-    code: "ECON 265",
-    title: "Microeconomics",
-    desc: "Analyzing consumer behavior and pricing strategies. Understanding why people make economic choices is critical when developing and launching a product.",
-    image: micro,
-    imageLink: "https://catalog.njit.edu/search/?P=ECON%20266",
-  },
+
   {
     code: "MGMT 290",
     title: "Business Law I",
@@ -188,6 +210,13 @@ export const nextCourses = [
     desc: "Deconstructing complex narratives. Analyzing different perspectives sharpens critical thinking and improves the ability to communicate ideas clearly.",
     image: book,
     imageLink: "https://catalog.njit.edu/search/?P=LIT%20230",
+  },
+  {
+    code: "CS 113",
+    title: "Intro to Computer Science I",
+    desc: "Mastering the fundamentals of Object-Oriented Programming (OOP) in Java. Focused on building application logic measure by measure to create reusable, efficient code.",
+    image: java,
+    imageLink: "https://catalog.njit.edu/search/?P=CS%20113",
   },
 ];
 
@@ -211,13 +240,6 @@ export const pastCourses = [
 //--------------- Home Page -----------
 
 export const currentCourseHome = [
-  {
-    code: "CS 113",
-    title: "Intro to Computer Science I",
-    desc: "Mastering the fundamentals of Object-Oriented Programming (OOP) in Java. Focused on building application logic measure by measure to create reusable, efficient code.",
-    image: java,
-    imageLink: "https://catalog.njit.edu/search/?P=CS%20113",
-  },
   {
     code: "ACCT 115",
     title: "Fundamentals of Accounting",

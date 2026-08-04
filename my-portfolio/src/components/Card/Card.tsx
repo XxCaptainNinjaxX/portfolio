@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import "./Card.css";
 import { usePopup } from "../Pop-up/Pop-upContext";
 
@@ -15,6 +17,7 @@ interface cardProp {
 
 export default function Card(props: cardProp) {
   const { openPopup } = usePopup();
+  const [isImageLoaded, setIsImageLoaded] = useState(false);
 
   const handleClick = () => {
     if (props.popupTitle && props.popupDesc) {
@@ -32,7 +35,14 @@ export default function Card(props: cardProp) {
   return (
     <>
       <div className="course" onClick={handleClick}>
-        <img src={props.image} alt={props.alt} className="course-image" />
+        <img
+          src={props.image}
+          alt={props.alt}
+          className={`course-image ${isImageLoaded ? "is-loaded" : ""}`}
+          loading="lazy"
+          decoding="async"
+          onLoad={() => setIsImageLoaded(true)}
+        />
         <p className="course-desc">{props.desc}</p>
       </div>
     </>
