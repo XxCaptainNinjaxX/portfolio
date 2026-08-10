@@ -2,7 +2,11 @@ import "../SubPage.css";
 
 import PageHeader from "../../components/PageHeader/PageHeader";
 import Card from "../../components/Card/Card";
-import { pastProjects, currentProjects } from "../../components/Data/data";
+import {
+  pastProjects,
+  currentProjects,
+  nextProjects,
+} from "../../components/Data/data";
 
 export default function Developer() {
   return (
@@ -50,6 +54,20 @@ export default function Developer() {
             popupTitle={`${project.title}`}
             popupDesc={project.desc}
             imageLink={project.imageLink}
+          />
+        ))}
+      </div>
+      <PageHeader title="Future projects" />
+
+      <div className="nextGrid">
+        {nextProjects.map((project, index) => (
+          <Card
+            key={index}
+            desc={project.title}
+            alt={project.title}
+            image={project.image}
+            popupTitle={`${project.title}`}
+            popupDesc={project.desc}
           />
         ))}
       </div>

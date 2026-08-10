@@ -56,6 +56,69 @@ export const pastProjects = [
     imageLink: "https://robriguez.com/projects/Prez-Perm",
   },
 ];
+export const nextProjects = [
+  {
+    title: "Auto Transcription",
+    desc: "Tech stack [] ",
+    image: placeholderImage,
+  },
+  {
+    title: "Producivity Enforcer",
+    desc: "Tech stack [] a lightweight software that will track your eyes. After 10 minutes of noticing your eyes looking 'down' will start playing an alarm or sound of your choosing to get you back to work ",
+    image: placeholderImage,
+  },
+  {
+    title: "Auto Transcription",
+    desc: "Tech stack [] ",
+    image: placeholderImage,
+  },
+  {
+    title: "Auto Transcription",
+    desc: "Tech stack [] ",
+    image: placeholderImage,
+  },
+  {
+    title: "Auto Transcription",
+    desc: "Tech stack [] ",
+    image: placeholderImage,
+  },
+  {
+    title: "Auto Transcription",
+    desc: "Tech stack [] ",
+    image: placeholderImage,
+  },
+  {
+    title: "Auto Transcription",
+    desc: "Tech stack [] ",
+    image: placeholderImage,
+  },
+];
+
+/*
+
+
+"auto transcription"
+	- either choose or upload song, spits out transcription for specific instrument or entire score
+
+"productivity enforcer"
+	- light weight software, tracks eyes, if looking down for 10+ mins, blast alarms 
+
+"mom's business"
+	- tracks client booking + reviews 
+
+"Haircut spot"
+	- tracks client booking + reviews 
+
+"Step one"
+	- Marching improver
+
+"Zach Portfolio"
+
+always taking more clients 
+
+
+
+*/
 
 //--------------- Musician Page -----------
 
