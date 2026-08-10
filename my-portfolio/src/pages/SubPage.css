@@ -12,7 +12,8 @@ h1 {
 
 .currentGrid,
 .nextGrid,
-.pastGrid {
+.pastGrid,
+.grid {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;

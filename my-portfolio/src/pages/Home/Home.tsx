@@ -90,13 +90,9 @@ export default function Home() {
       <section className="about-me">
         {/* EXPERIENCE SECTION */}
         <Reveal className="exp-section">
-          <a
-            href="https://www.orionresourcepartners.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <NavLink to="/experience">
             <span className="experience">Experience</span>
-          </a>
+          </NavLink>
           <div className="experience-grid">
             {experience.map((role, index) => (
               <Card

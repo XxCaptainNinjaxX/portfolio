@@ -26,7 +26,10 @@ import stats from "../../assets/icons/png/005-scatter-graph.png";
 import cs114 from "../../assets/icons/png/004-algorithms.png";
 import law from "../../assets/icons/png/006-gavel.png";
 import python from "../../assets/icons/png/007-python.png";
-import orion from "../../assets/images/orion_logo.jpg";
+import orion_img from "../../assets/images/orion_logo.jpg";
+
+// stand-in art for entries that don't have a real logo yet
+const placeholderImage = "/android-chrome-192x192.png";
 
 //--------------- Dev Page -----------
 
@@ -238,13 +241,80 @@ export const pastCourses = [
   },
 ];
 
+//--------------- Experience Page -----------
+
+export const orion = [
+  {
+    title: "PPTX Web App",
+    desc: "Led internal tooling and AI automation for the investment team: four shipped projects, three interns directed, one production deployment. Most of the work wasn't writing code — it was sitting with the people doing the manual version and figuring out what they'd actually use.",
+    image: orion_img,
+  },
+  {
+    title: "ESG Migration + Automation ",
+    desc: "Placeholder — what the role is, what I own in it, and what it has taught me.",
+    image: placeholderImage,
+  },
+  {
+    title: "Newspaper Agent Workflow",
+    desc: "[Placeholder]",
+    image: placeholderImage,
+  },
+  {
+    title: "Microsoft Teams Transciption Agent",
+    desc: "[placeholder]",
+    image: placeholderImage,
+  },
+];
+
+export const internship2 = [
+  {
+    title: "[Company Name]",
+    desc: "[Description",
+    image: placeholderImage,
+    imageLink: "",
+  },
+  {
+    title: "[Company Name]",
+    desc: "[Description",
+    image: placeholderImage,
+    imageLink: "",
+  },
+  {
+    title: "[Company Name]",
+    desc: "[Description",
+    image: placeholderImage,
+    imageLink: "",
+  },
+];
+
+export const internship3 = [
+  {
+    title: "[Company Name]",
+    desc: "[Description",
+    image: placeholderImage,
+    imageLink: "",
+  },
+  {
+    title: "[Company Name]",
+    desc: "[Description",
+    image: placeholderImage,
+    imageLink: "",
+  },
+  {
+    title: "[Company Name]",
+    desc: "[Description",
+    image: placeholderImage,
+    imageLink: "",
+  },
+];
+
 //--------------- Home Page -----------
 
 export const experience = [
   {
     title: "Orion Resource Partners IT Intern",
     desc: "Led internal tooling and AI automation for the investment team: four shipped projects, three interns directed, one production deployment. Most of the work wasn't writing code — it was sitting with the people doing the manual version and figuring out what they'd actually use.",
-    image: orion,
+    image: orion_img,
     imageLink: "https://www.orionresourcepartners.com/",
   },
 ];

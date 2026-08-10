@@ -14,6 +14,7 @@ import useImagePreloader from "./components/Preloader/useImagePreloader";
 import { criticalImages } from "./components/Preloader/criticalImages";
 
 import Home from "./pages/Home/Home";
+import Experience from "./pages/Experience/Experience";
 import Developer from "./pages/Developer/Developer";
 import Musician from "./pages/Musician/Musician";
 import Student from "./pages/Student/Student";
@@ -42,6 +43,7 @@ export default function App() {
         <main className="content-layer">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/experience" element={<Experience />} />
             <Route path="/student" element={<Student />} />
             <Route path="/developer" element={<Developer />} />
             <Route path="/musician" element={<Musician />} />
