@@ -26,6 +26,7 @@ import stats from "../../assets/icons/png/005-scatter-graph.png";
 import cs114 from "../../assets/icons/png/004-algorithms.png";
 import law from "../../assets/icons/png/006-gavel.png";
 import python from "../../assets/icons/png/007-python.png";
+import orion from "../../assets/images/orion_logo.jpg";
 
 //--------------- Dev Page -----------
 
@@ -238,6 +239,15 @@ export const pastCourses = [
 ];
 
 //--------------- Home Page -----------
+
+export const experience = [
+  {
+    title: "Orion Resource Partners IT Intern",
+    desc: "Led internal tooling and AI automation for the investment team: four shipped projects, three interns directed, one production deployment. Most of the work wasn't writing code — it was sitting with the people doing the manual version and figuring out what they'd actually use.",
+    image: orion,
+    imageLink: "https://www.orionresourcepartners.com/",
+  },
+];
 
 export const currentCourseHome = [
   {

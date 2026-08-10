@@ -8,6 +8,7 @@ import Card from "../../components/Card/Card.tsx";
 import DownWaves from "../../components/Waves/DownWaves.tsx";
 import UpWaves from "../../components/Waves/UpWaves.tsx";
 import {
+  experience,
   currentCourseHome,
   projectsHome,
   musicianHome,
@@ -87,6 +88,33 @@ export default function Home() {
       <DownWaves />
 
       <section className="about-me">
+        {/* EXPERIENCE SECTION */}
+        <Reveal className="exp-section">
+          <a
+            href="https://www.orionresourcepartners.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className="experience">Experience</span>
+          </a>
+          <div className="experience-grid">
+            {experience.map((role, index) => (
+              <Card
+                key={index}
+                desc={role.title}
+                alt={role.title}
+                image={role.image}
+                popupTitle={`${role.title}`}
+                popupDesc={role.desc}
+                imageLink={role.imageLink}
+              />
+            ))}
+          </div>
+        </Reveal>
+
+        <UpWaves />
+        <DownWaves />
+
         {/*STUDENT SECTION */}
         <Reveal className="edu-section">
           <NavLink to="/student">

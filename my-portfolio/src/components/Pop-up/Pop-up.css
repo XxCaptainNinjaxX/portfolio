@@ -27,15 +27,21 @@
 
   width: 90%;
   max-width: 500px;
+  max-height: 65vh;
   border-radius: 24px;
   padding: 0;
+  /* keeps the scrolling body clipped to the corner radius */
   overflow: hidden;
   text-align: center;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .popup-header {
   padding: 30px 40px 10px 40px;
   font-family: Elms Sans;
+  flex-shrink: 0;
 }
 
 .popup-header h2 {
@@ -48,6 +54,32 @@
 .popup-body {
   padding: 10px 40px 30px 40px;
   font-family: Elms Sans;
+
+  flex: 0 1 auto;
+  /* without this the flex child refuses to shrink and never scrolls */
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+}
+
+.popup-body::-webkit-scrollbar {
+  width: 8px;
+}
+
+.popup-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.popup-body::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+}
+
+.popup-body::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.4);
 }
 
 .popup-body p {
@@ -66,6 +98,7 @@
   align-items: center;
   gap: 15px;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .close-btn {

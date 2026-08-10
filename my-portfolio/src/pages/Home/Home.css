@@ -100,6 +100,7 @@
   width: 100%;
 }
 
+.exp-section,
 .edu-section,
 .dev-section,
 .music-section {
@@ -116,24 +117,27 @@
   box-sizing: border-box;
 }
 
+.exp-section a,
 .edu-section a,
 .dev-section a,
 .music-section a {
   text-decoration: none;
 }
 
-.edu-section,
-.music-section {
+.exp-section,
+.dev-section {
   flex-direction: row;
   text-align: left;
 }
 
-.dev-section {
+.edu-section,
+.music-section {
   flex-direction: row-reverse;
   text-align: right;
   padding-right: 40px;
 }
 
+.experience,
 .student,
 .developer,
 .musician {
@@ -148,6 +152,7 @@
   min-width: 300px;
 }
 
+.experience-grid,
 .course-grid,
 .project-grid,
 .music-grid {
@@ -163,12 +168,13 @@
   color: var(--mainColor);
 }
 
-.student,
-.musician {
+.experience,
+.developer {
   margin-left: 1.2em;
 }
 
-.developer {
+.student,
+.musician {
   margin-right: 1.2em;
 }
 
@@ -201,6 +207,7 @@
     margin-bottom: 20px;
   }
 
+  .exp-section,
   .edu-section,
   .dev-section,
   .music-section {
@@ -213,10 +220,12 @@
     padding-bottom: 60px;
   }
 
-  .dev-section {
+  .edu-section,
+  .music-section {
     flex-direction: column;
   }
 
+  .experience,
   .student,
   .developer,
   .musician {
@@ -226,6 +235,7 @@
     margin-bottom: 20px !important;
   }
 
+  .experience-grid,
   .course-grid,
   .project-grid,
   .music-grid {
