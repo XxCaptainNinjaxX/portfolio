@@ -13,16 +13,17 @@ export default function Experience() {
 
       <div className="page-intro">
         <p>
-          Placeholder intro — a short paragraph on what I look for in the work I
-          take on, and what I bring to a team.
+          Most of what I've built started as a workflow nobody thought was worth
+          automating, or did not think it was possible to achomplish.
         </p>
         <p>
-          Placeholder — second paragraph, the through-line between the roles
-          below.
+          Four projects from my summer at Orion Resource Partners. Two I led
+          with three interns reporting to me; two I built alone. All shipped,
+          all still in internal use.
         </p>
       </div>
 
-      <PageHeader title="Orion Resource Partners Projects" />
+      <PageHeader title="Orion Resource Partners Intern Projects" />
 
       <div className="grid">
         {orion.map((project, index) => (

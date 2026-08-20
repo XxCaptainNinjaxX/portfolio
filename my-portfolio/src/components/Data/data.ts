@@ -101,7 +101,7 @@ export const nextProjects = [
 	- either choose or upload song, spits out transcription for specific instrument or entire score
 
 "productivity enforcer"
-	- light weight software, tracks eyes, if looking down for 10+ mins, blast alarms 
+	- light weight software, tracks eye s, if looking down for 10+ mins, blast alarms 
 
 "mom's business"
 	- tracks client booking + reviews 
@@ -309,23 +309,27 @@ export const pastCourses = [
 export const orion = [
   {
     title: "PPTX Web App",
-    desc: "Led internal tooling and AI automation for the investment team: four shipped projects, three interns directed, one production deployment. Most of the work wasn't writing code — it was sitting with the people doing the manual version and figuring out what they'd actually use.",
+    desc: "Every reporting cycle the investment team has 15+ documents — PDF, DOCX, PPTX, JSON, Markdown, PPTX, all between 5 to 200 pages ea with the purpose of creating a deck by hand. Other interns before me had abandoned this project because they thought it was infeasible due to cost restraints and accuracy. I did what they couldnt, I built a web app that parses these uploads to a Markdown file, as a 'deck script' which then the user can refine it conversationally with Claude, then renders it against 30+ internal slide templates. Shipped to internal production in Docker, eliminating ~17 hours of weekly manual formatting. \n \nI choose this path of hardcoding each of the template slides rather than prompting because I found that it was the most reliable way to incooperate all of these different slide designs while maintaining simplicity. ",
     image: orion_img,
+    imageLink: "https://orionrp.com/",
   },
   {
     title: "ESG Migration + Automation ",
-    desc: "Placeholder — what the role is, what I own in it, and what it has taught me.",
-    image: placeholderImage,
+    desc: "Joined this ESG extraction project mid-build, took over as lead, and migrated a large 1k+ line Python script to Power Automate and Copilot Studio, both self-taught in two days. \n \nRebuilt this as a three-stage agent workflow thats driven off a Excel control column, user selects the company (from 500+) and which steps to run: agents research 5–8 documents each, parse them for target data, then extract a second data set. \n \nCut a full run from 28+ hours to 11 while raising accuracy and took a 5-month manual process down to 1–2 weeks of monitoring; directed 3 interns and ran requirements discovery directly with end users.",
+    image: orion_img,
+    imageLink: "https://orionrp.com/",
   },
   {
     title: "Newspaper Agent Workflow",
-    desc: "[Placeholder]",
-    image: placeholderImage,
+    desc: "Originally, other co workers wanted a system in where they can upload many files (20+ a day) + find other related articles on that topic and store them in a SharePoint. From there, would be able to communicate with an AI about the information from these documents. ex: 'whats new in the past 3 days', 'what is mentioned about __ in __ article', 'what is noteworthy from each of these', 'give me a summary of the past 2 days' \n \nI accomplished this by building an agent that triggers on upload, renames and categorizes PDF's automatically. Three different PowerAutomate flows were used to create this. ",
+    image: orion_img,
+    imageLink: "https://orionrp.com/",
   },
   {
-    title: "Microsoft Teams Transciption Agent",
-    desc: "[placeholder]",
-    image: placeholderImage,
+    title: "Teams Transciption Agent",
+    desc: "Teams generates a transcript for every call if enabled and outputs a file but nobody reads them,  the information exists and stays inaccessible. \n \nI built an agent that takes the auto-generated transcription file, then produces a summary and overview. + an agent that can you can have a conversation with (like the Newspaper workflow), answering follow-up questions about what was said, email action reminders, anything based on the meeting. Created this on the final days of my internship",
+    image: orion_img,
+    imageLink: "https://orionrp.com/",
   },
 ];
 
