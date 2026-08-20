@@ -58,61 +58,38 @@ export const pastProjects = [
 ];
 export const nextProjects = [
   {
-    title: "Friend Portfolio",
-    desc: "Tech stack [React] \n A musical portfolio for a friend",
+    title: "Musician's Friend Portfolio",
+    desc: "Tech stack [Next.js, TypeScript, Tailwind CSS, Sanity, Vercel] \n A performance portfolio for a musician includes recordings, bio, booking inquiries, statically exported for near-zero hosting cost. \n \nBuilt on a headless CMS (Content Management System) so he posts a new gig or track himself instead of texting me to redeploy. The issued I ran into planning this interestingly wasn't the design, rather it was who maintains the site after handoff.",
     image: placeholderImage,
   },
   {
-    title: "'Producivity Enforcer' ",
-    desc: "Tech stack [] \n a lightweight software that will track your eyes. After 10 minutes of noticing your eyes looking 'down' will start playing an alarm or sound of your choosing to get you back to work ",
+    title: "'Productivity Enforcer'",
+    desc: "Tech stack [Electron, TypeScript, MediaPipe Face Landmarker, electron-builder] \n A menu bar and system tray app for macOS and Windows that watches the user head's pitch, not screen activity. Ten minutes of sustained head-down and it plays an alarm of your choosing to get them back to work. Brief glances up don't reset the clock; sustained ones do (10 secs). \n \nCalibrates to user's neutral posture on first run, because \"looking down\" depends entirely on where your monitor/camera sits. The app reports a state similar to how Teams uses dots, but not what you're doing. \n \nElectron over Python specifically for the cross-platform ease, where PyInstaller would have meant fighting macOS camera issues.",
     image: placeholderImage,
   },
   {
-    title: "'Auto Transcription' ",
-    desc: "Tech Stack [] \n User can either choose a song from a large list using a spotify API, upload sheet music, or upload a song and will spit out a transcription sheet music for a specific instrument or an entire score \n \nI am a professional trumpet player and every time that I wanted to learn or play a piece of music that the sheet music wasn't available I would get annoyed, so I wanted to create a solution for this rather than just using AI",
+    title: "'Auto Clef'",
+    desc: "Tech stack [Next.js, TypeScript, OpenSheetMusicDisplay, Tone.js, FastAPI, Python, oemer, OpenCV, Basic Pitch, librosa, music21, PostgreSQL, Redis, Docker] \n A browser-based score reader that works in both directions. \n \nPhotograph a page of sheet music with your phone and it returns an editable, playable score. User is able to press 'play' and hear the part before you read it. Import MusicXML out of MuseScore, transpose it for your instrument, and hear it in written or concert pitch. on the other side, the user is able to upload a recording and it detects pitch and accidentals, tracks tempo, infers key, then finalizes the music based on the data. \n \nI play trumpet professionally and reading sheet music withought hearing it before has always been a struggle as mine.Creating this app will solve that problem of other musians in the same position as me. ",
+    image: placeholderImage,
+  },
+  // Refrence: https://www.soundslice.com/sheet-music-scanner/
+  {
+    title: "Mom's Business App",
+    desc: "Tech stack [Next.js, TypeScript, Expo / React Native, PostgreSQL, Prisma, Auth.js, Google Calendar API, iCalendar (.ics), Stripe, Resend, Vercel] \n Clients browse services and pricing and book a consultation on the web. She runs her side from an Expo app: today's schedule, a push when a booking lands, block time without opening a laptop. \n \nMy mom spent years as an accountant at a large firm and now runs her own book of small business and individual clients, so requirements came from watching where she loses time rather than from a feature list. \n \nBooking reads free/busy off her Google Calendar so a personal appointment blocks a consultation slot automatically, and clients get a standards-based .ics attachment that lands in Apple Calendar, Google, or Outlook without connecting an account. Apple has no server-side calendar API, so iCloud is reached through EventKit inside the installed app, not from the server",
     image: placeholderImage,
   },
   {
-    title: "Mom's business app",
-    desc: "Tech stack [] \n My was previously an accountant for a large firm, now she's doing accounting for other small buisnesses and people. \n \nThis project will show what services are offered, prices of them, tracking cliental and reviews, lastly scheduling consultation ",
-    image: placeholderImage,
-  },
-  {
-    title: "Haircut buisness app",
-    desc: "Tech stack [] \n My barber that i go to has been complaining about the pricing of booksy (starting $31 to $100 monthly) and some of the feature that it has. I wanted to create him a Website + app for his barber business.",
+    title: "Barber Business App",
+    desc: "Tech stack [Next.js, TypeScript, Expo / React Native, PostgreSQL, Prisma, Stripe, Twilio, Google Calendar API, iCalendar (.ics), PWA] \n A booking system for my barber's business, built to replace a $31–$100/month Booksy subscription + other complanits that he had when brought this idea to him. Service menu with per-cut durations and buffers, availability, card-on-file for ease of pay and no-shows cost, SMS reminders, and calendar sync so he isn't checking two places. \n \nCustomers book on the web, linkable from his Instagram bio. He works from a native app, because someone standing at a chair all day needs a real push notification the moment a slot fills, and iOS only delivers web push to installed PWAs. Different user, different frequency, different client. \n \nAvailability reads off Google Calendar; confirmations go out as .ics so they open in whatever calendar the customer already uses; the app writes to his own iPhone calendar through EventKit, which is the only route to iCloud since Apple ships no server-side API. \n \nShares its scheduling engine with the accounting scheduling site as a package rather than a service, same generation, buffers, and logic, nothing gets touched between these two unrelated businesses. \n \n The subscription price also buys reliability, and running it myself means owning A2P 10DLC registration for SMS, PCI scope on payments, and being the person he calls when booking breaks on a Saturday morning. Roughly $15–25/month in Twilio, Stripe, and hosting against $31–100 saved",
     image: placeholderImage,
   },
   {
     title: "'Step One'",
-    desc: 'Tech stack [] \n As someone in world class marching band, I have found that there is no tool to help teach / practice your marching technique. Although this seems very niche, I want to help out other students trying to improve their technique when they are at home and not with a instructor or teacher. \n \n This app on their phone (apple + androiwill track certain joints in the leg, foot, shoulder, upper body, and cross that against a database of what the correct technique is, using other professional marching members angles as examples. \n \n By using certain algorithms, it will use the user data to instruct them what needs to be worked on and how, rather than: " Your ___ tissue was 47 degrees, correct angle is 48.182 degrees ", it will show "Your knee was slightly more beant than it should be, much more improvement than last time ___!, your knee looked like this [show image with dots and lines] whereas it should look like [image + dots + lines] ".',
+    desc: 'Tech stack [React Native (Expo), TypeScript, FastAPI, Python, MediaPipe Pose Landmarker, OpenCV, dynamic time warping, PostgreSQL, Cloudflare R2, Clerk] \n As someone in world class marching band, I have found that there is no tool to help teach / practice your marching technique. This app will do just that, upload video you already have, and it extracts 3D joint positions, time-aligns your rep against a reference rep, and grades the angles that actually define the technique, using. All of these different marching techniques such as straight leg, bent leg, jazz running, marking time, etc, all have their own ruleset.\n \nOpen the app and you land on the week: sessions logged, per-technique trend, whether you\'re improving or sliding, then pick what you want to work on. \n \nFeedback reads the way a tech instructor talks — "your knee bent a little deeper than it should, but less than last week" — with your skeleton drawn next to the reference, instead of "your knee was 47.3 degrees and the target is 48.2." Nobody has or will ever fixed their technique from a decimal so I am ensuring that the algorithm will respond to the user in a understandable way. \n \n Additionally, I choose the method of Record-then-review rather than live feedback, because a phone far enough away to capture your full body is too far away to read feedback mid-rep, \n \nThese decisions carried the design of this. The heavy lifting estimation runs server-side in Python rather than on-device, so reference data and scoring rules change without needing an app update since these rules may change based on new techniques. In addition, these angles come from MediaPipe\'s metric world landmarks rather than screen coordinates, because a knee measured 30 degrees off-axis is a different number than the same knee measured head-on. If camera position leaks into the score, the reference set is worthless',
+
     image: placeholderImage,
   },
 ];
-
-/*
-
-"auto transcription"
-	- either choose or upload song, spits out transcription for specific instrument or entire score
-
-"productivity enforcer"
-	- light weight software, tracks eye s, if looking down for 10+ mins, blast alarms 
-
-"mom's business"
-	- tracks client booking + reviews 
-
-"Haircut spot"
-	- tracks client booking + reviews 
-
-"Step one"
-	- Marching improver
-
-"Zach Portfolio"
-
-always taking more clients 
-
-
-
-*/
 
 //--------------- Musician Page -----------
 
