@@ -58,44 +58,38 @@ export const pastProjects = [
 ];
 export const nextProjects = [
   {
-    title: "Auto Transcription",
-    desc: "Tech stack [] ",
+    title: "Friend Portfolio",
+    desc: "Tech stack [React] \n A musical portfolio for a friend",
     image: placeholderImage,
   },
   {
-    title: "Producivity Enforcer",
-    desc: "Tech stack [] a lightweight software that will track your eyes. After 10 minutes of noticing your eyes looking 'down' will start playing an alarm or sound of your choosing to get you back to work ",
+    title: "'Producivity Enforcer' ",
+    desc: "Tech stack [] \n a lightweight software that will track your eyes. After 10 minutes of noticing your eyes looking 'down' will start playing an alarm or sound of your choosing to get you back to work ",
     image: placeholderImage,
   },
   {
-    title: "Auto Transcription",
-    desc: "Tech stack [] ",
+    title: "'Auto Transcription' ",
+    desc: "Tech Stack [] \n User can either choose a song from a large list using a spotify API, upload sheet music, or upload a song and will spit out a transcription sheet music for a specific instrument or an entire score \n \nI am a professional trumpet player and every time that I wanted to learn or play a piece of music that the sheet music wasn't available I would get annoyed, so I wanted to create a solution for this rather than just using AI",
     image: placeholderImage,
   },
   {
-    title: "Auto Transcription",
-    desc: "Tech stack [] ",
+    title: "Mom's business app",
+    desc: "Tech stack [] \n My was previously an accountant for a large firm, now she's doing accounting for other small buisnesses and people. \n \nThis project will show what services are offered, prices of them, tracking cliental and reviews, lastly scheduling consultation ",
     image: placeholderImage,
   },
   {
-    title: "Auto Transcription",
-    desc: "Tech stack [] ",
+    title: "Haircut buisness app",
+    desc: "Tech stack [] \n My barber that i go to has been complaining about the pricing of booksy (starting $31 to $100 monthly) and some of the feature that it has. I wanted to create him a Website + app for his barber business.",
     image: placeholderImage,
   },
   {
-    title: "Auto Transcription",
-    desc: "Tech stack [] ",
-    image: placeholderImage,
-  },
-  {
-    title: "Auto Transcription",
-    desc: "Tech stack [] ",
+    title: "'Step One'",
+    desc: 'Tech stack [] \n As someone in world class marching band, I have found that there is no tool to help teach / practice your marching technique. Although this seems very niche, I want to help out other students trying to improve their technique when they are at home and not with a instructor or teacher. \n \n This app on their phone (apple + androiwill track certain joints in the leg, foot, shoulder, upper body, and cross that against a database of what the correct technique is, using other professional marching members angles as examples. \n \n By using certain algorithms, it will use the user data to instruct them what needs to be worked on and how, rather than: " Your ___ tissue was 47 degrees, correct angle is 48.182 degrees ", it will show "Your knee was slightly more beant than it should be, much more improvement than last time ___!, your knee looked like this [show image with dots and lines] whereas it should look like [image + dots + lines] ".',
     image: placeholderImage,
   },
 ];
 
 /*
-
 
 "auto transcription"
 	- either choose or upload song, spits out transcription for specific instrument or entire score
@@ -321,7 +315,7 @@ export const orion = [
   },
   {
     title: "Newspaper Agent Workflow",
-    desc: "Originally, other co workers wanted a system in where they can upload many files (20+ a day) + find other related articles on that topic and store them in a SharePoint. From there, would be able to communicate with an AI about the information from these documents. ex: 'whats new in the past 3 days', 'what is mentioned about __ in __ article', 'what is noteworthy from each of these', 'give me a summary of the past 2 days' \n \nI accomplished this by building an agent that triggers on upload, renames and categorizes PDF's automatically. Three different PowerAutomate flows were used to create this. ",
+    desc: "Originally, other co workers wanted a system in where they can upload many files (20+ a day) + find other related articles on that topic and store them in a SharePoint. From there, would be able to communicate with an AI about the information from these documents. ex: 'whats new in the past 3 days', 'what is mentioned about ___ in ___ article', 'what is noteworthy from each of these', 'give me a summary of the past 2 days' \n \nI accomplished this by building an agent that triggers on upload, renames and categorizes PDF's automatically. Three different PowerAutomate flows were used to create this. ",
     image: orion_img,
     imageLink: "https://orionrp.com/",
   },
