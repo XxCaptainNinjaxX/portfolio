@@ -101,7 +101,7 @@ export default function Home() {
                 alt={role.title}
                 image={role.image}
                 popupTitle={`${role.title}`}
-                popupDesc={role.desc}
+                popupDesc={role.homeDesc ?? role.desc}
                 imageLink={role.imageLink}
               />
             ))}
@@ -124,7 +124,7 @@ export default function Home() {
                 alt={course.title}
                 image={course.image}
                 popupTitle={`${course.title} (${course.code})`}
-                popupDesc={course.desc}
+                popupDesc={course.homeDesc ?? course.desc}
                 imageLink={course.imageLink}
               />
             ))}
@@ -147,7 +147,7 @@ export default function Home() {
                 alt={project.title}
                 image={project.image}
                 popupTitle={`${project.title}`}
-                popupDesc={project.desc}
+                popupDesc={project.homeDesc ?? project.desc}
                 imageLink={project.imageLink}
               />
             ))}
@@ -170,7 +170,7 @@ export default function Home() {
                 alt={music.title}
                 image={music.image}
                 popupTitle={`${music.title}`}
-                popupDesc={music.desc}
+                popupDesc={music.homeDesc ?? music.desc}
                 imageLink={music.imageLink}
               />
             ))}
