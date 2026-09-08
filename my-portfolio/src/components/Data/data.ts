@@ -331,19 +331,24 @@ export const internship3 = [
 ];
 
 //--------------- Home Page -----------
-// Every array below is a hand-picked selection of the entries above. Swap a key
-// to change which card shows on Home; add a `homeDesc` to an entry to give it a
-// shorter popup here than it gets on its own page.
 
 export const experience: ContentEntry[] = [exp.orionRole];
 
-export const currentCourseHome: CourseEntry[] = [student.cs114, student.is265];
+export const currentCourseHome: CourseEntry[] = [
+  student.is265,
+  student.cs114,
+  student.acct215,
+];
 
-export const projectsHome: ContentEntry[] = [dev.studyNeant, dev.prezPerm];
+export const projectsHome: ContentEntry[] = [
+  dev.studyNeant,
+  dev.musiciansFriend,
+  dev.stepOne,
+];
 
 export const musicianHome: ContentEntry[] = [
-  musician.njitWind,
   musician.cabs,
+  musician.njitWind,
   musician.orchestra,
 ];
 

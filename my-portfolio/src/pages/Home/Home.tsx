@@ -111,29 +111,6 @@ export default function Home() {
         <UpWaves />
         <DownWaves />
 
-        {/*STUDENT SECTION */}
-        <Reveal className="edu-section">
-          <NavLink to="/student">
-            <span className="student">Student </span>
-          </NavLink>
-          <div className="course-grid">
-            {currentCourseHome.map((course, index) => (
-              <Card
-                key={index}
-                desc={course.title}
-                alt={course.title}
-                image={course.image}
-                popupTitle={`${course.title} (${course.code})`}
-                popupDesc={course.homeDesc ?? course.desc}
-                imageLink={course.imageLink}
-              />
-            ))}
-          </div>
-        </Reveal>
-
-        <UpWaves />
-        <DownWaves />
-
         {/* DEVELOPER SECTION  */}
         <Reveal className="dev-section">
           <NavLink to="/developer">
@@ -172,6 +149,29 @@ export default function Home() {
                 popupTitle={`${music.title}`}
                 popupDesc={music.homeDesc ?? music.desc}
                 imageLink={music.imageLink}
+              />
+            ))}
+          </div>
+        </Reveal>
+
+        <UpWaves />
+        <DownWaves />
+
+        {/*STUDENT SECTION */}
+        <Reveal className="edu-section">
+          <NavLink to="/student">
+            <span className="student">Student </span>
+          </NavLink>
+          <div className="course-grid">
+            {currentCourseHome.map((course, index) => (
+              <Card
+                key={index}
+                desc={course.title}
+                alt={course.title}
+                image={course.image}
+                popupTitle={`${course.title} (${course.code})`}
+                popupDesc={course.homeDesc ?? course.desc}
+                imageLink={course.imageLink}
               />
             ))}
           </div>

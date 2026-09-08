@@ -48,8 +48,8 @@ export default function Header({ isSplashOn, toggleSplash }: HeaderProps) {
           <NavLink to="/">About Me</NavLink>
           <NavLink to="/experience">Experience</NavLink>
           <NavLink to="/developer">Developer</NavLink>
-          <NavLink to="/student">Student</NavLink>
           <NavLink to="/musician">Musician</NavLink>
+          <NavLink to="/student">Student</NavLink>
         </nav>
 
         {/* Socials */}
