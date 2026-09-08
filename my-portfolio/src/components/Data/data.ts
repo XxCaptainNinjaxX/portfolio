@@ -18,17 +18,15 @@ import ts from "../../assets/icons/png/typescript.png";
 import accounting from "../../assets/icons/png/balanceSheet.png";
 import business from "../../assets/icons/png/buisness.png";
 import calc from "../../assets/icons/png/calc.png";
-import english from "../../assets/icons/png/quill.png";
 import book from "../../assets/icons/png/001-book.png";
 import micro from "../../assets/icons/png/002-sale-tag.png";
 import mis from "../../assets/icons/png/003-data-storage.png";
 import stats from "../../assets/icons/png/005-scatter-graph.png";
 import cs114 from "../../assets/icons/png/004-algorithms.png";
-import law from "../../assets/icons/png/006-gavel.png";
 import python from "../../assets/icons/png/007-python.png";
 import orion_img from "../../assets/images/orion_logo.jpg";
+import zach from "../../assets/images/zach.png";
 
-// stand-in art for entries that don't have a real logo yet
 const placeholderImage = "/android-chrome-192x192.png";
 
 //--------------- Dev Page -----------
@@ -39,6 +37,11 @@ export const currentProjects = [
     desc: "A comprehensive productivity suite for students. Building this involves integrating a custom GPA calculator, calendar, dynamic note-taking system, and more, to solve real academic workflow problems.",
     image: studyNeantImg,
     imageLink: "https://robriguez.com/projects/Studyneant/",
+  },
+  {
+    title: "Musician's Friend Portfolio",
+    desc: "Tech stack [Next.js, TypeScript, Tailwind CSS, Sanity, Vercel] \n A performance portfolio for a musician includes recordings, bio, booking inquiries, statically exported for near-zero hosting cost. \n \nBuilt on a headless CMS (Content Management System) so he posts a new gig or track himself instead of texting me to redeploy. The issued I ran into planning this interestingly wasn't the design, rather it was who maintains the site after handoff.",
+    image: zach,
   },
 ];
 
@@ -57,11 +60,6 @@ export const pastProjects = [
   },
 ];
 export const nextProjects = [
-  {
-    title: "Musician's Friend Portfolio",
-    desc: "Tech stack [Next.js, TypeScript, Tailwind CSS, Sanity, Vercel] \n A performance portfolio for a musician includes recordings, bio, booking inquiries, statically exported for near-zero hosting cost. \n \nBuilt on a headless CMS (Content Management System) so he posts a new gig or track himself instead of texting me to redeploy. The issued I ran into planning this interestingly wasn't the design, rather it was who maintains the site after handoff.",
-    image: placeholderImage,
-  },
   {
     title: "'Productivity Enforcer'",
     desc: "Tech stack [Electron, TypeScript, MediaPipe Face Landmarker, electron-builder] \n A menu bar and system tray app for macOS and Windows that watches the user head's pitch, not screen activity. Ten minutes of sustained head-down and it plays an alarm of your choosing to get them back to work. Brief glances up don't reset the clock; sustained ones do (10 secs). \n \nCalibrates to user's neutral posture on first run, because \"looking down\" depends entirely on where your monitor/camera sits. The app reports a state similar to how Teams uses dots, but not what you're doing. \n \nElectron over Python specifically for the cross-platform ease, where PyInstaller would have meant fighting macOS camera issues.",
@@ -92,17 +90,16 @@ export const nextProjects = [
 ];
 
 //--------------- Musician Page -----------
-
 export const currentEnsembles = [
   {
     title: "NJIT Wind Ensemble",
-    desc: "Operating as Lead Trumpet and Soloist. Leadership in this setting demands absolute accountability and precision, blending my individual sound into the ensemble's overall tone while being a role model in not just the trumpet section, but the overall ensemble.",
+    desc: "Operating as lead trumpet, section leader, and soloist since September 2025.\n\nI came in hoping to find players I could learn from and that expectation got corrected fast, since the level was not what I had pictured. That turned into the opposite of a disappointment though, because by the second or third week I had taken the section leader role and the job stopped being about keeping up and started being about pulling other people forward, mentoring the trumpets on musicality and running the section across both semesters.\n\nFall and spring I held multiple solos and the lead book as the lead classical trumpet on campus. I had planned on playing jazz here too, and the audition is where I found out something useful about myself; the feedback was that the tone and the skills were there, with some real jazz instincts, yet it was obvious I was classically trained. That being said, I took no shame in it and made the call to stop splitting my attention, putting roughly 95% of my practice into classical while keeping a jazz lead part in the rotation to hold onto the range. The rest of that time goes toward auditioning for the top DCI corps.",
     image: njit,
     imageLink: "https://theatre.njit.edu/music-ensemble-concerts",
   },
   {
     title: "Hawthorne Caballeros DCI",
-    desc: "Committing to the extreme discipline and physical expectations required at the world-class level of the marching arts for the 2026 season. Often known as the 'closest thing to the military without being in the military' due to the demanding intensity.",
+    desc: "Marching lead trumpet for the 2026 season, selected out of a national audition pool.\n\nDrum corps is often called the closest thing to the military without being in the military, and the schedule is where that comparison earns itself; 12+ hours of rehearsal a week, held alongside five classes and a concurrent internship. There is no version of that week where nothing gives, so the skill actually being trained is not endurance on the horn, rather it is deciding what gets your attention when everything is due at once.\n\nUltimately the standard is that none of the rest of your life is allowed to show up in the sound.",
     image: cabs,
     imageLink: "https://hawthornecaballeros.org/",
   },
@@ -111,25 +108,25 @@ export const currentEnsembles = [
 export const pastEnsembles = [
   {
     title: "EHS Jazz Ensemble (Soloist)",
-    desc: "A four-year journey of continuous improvement (2021-2025). Progressing from the last chair to a soloist role, only proved that consistent, daily practice is the true foundation of mastery.",
+    desc: "Four years in the jazz ensemble, 2021 to 2025.\n\nFreshman year I was not sure I wanted to be there and was too shy to take up any space in the room, which in a jazz setting is the one thing you cannot afford. The distance between that and my senior year is the whole reason this ensemble is on here.\n\nMy last concert I took an improv solo in front of a few hundred people. Improv leaves you nowhere to hide, since there is no part on the page to fall back on and everything you play is a decision you are making in real time in front of everyone. Overall that is the ensemble that proved to me the daily practice actually compounds, because none of that was talent showing up, it was four years of showing up.",
     image: jazz,
     imageLink:
       "https://drive.google.com/drive/folders/1xzQUrANXubfc2mdPc9OuQUM7rsg6rTrC?usp=sharing",
   },
   {
     title: "EHS Orchestra (Soloist + Lead)",
-    desc: "Performed complex works like the 'Overture from Carmen' and featured as a soloist for the 'Medley from Chicago.' High-stakes performances forge absolute focus under pressure.",
+    desc: "Performed as lead and soloist on works including the 'Overture from Carmen' and a featured solo on the 'Medley from Chicago.'\n\nOrchestral playing puts the trumpet in a different role than band does, since the section sits exposed and often enters late, which means the first note has to be right without the luxury of warming into a phrase first.\n\nYet what stays with me is the pressure. A solo in front of a full hall is one take with no second attempt, and learning to stay calm inside that is the same skill I use walking into a room to present something I built.",
     image: orch,
     imageLink: "https://youtu.be/avnEmxiU1Rg?si=18xroo0Zv099HeIO&t=2926",
   },
   {
     title: "EHS Trumpet Ensemble (Soloist)",
-    desc: "Small group performance leaves no room to hide. Every note and mistake is aplified at the perofmrance, leaving that personal accountability drives team success.",
+    desc: "Small group performance leaves nowhere to hide.\n\nIn a full ensemble a missed note gets absorbed by the people around you, while in a trumpet ensemble there are only a handful of parts and every one of them is audible, so a mistake is not just heard, it is traced directly back to whoever made it. That exposure changes how you prepare, since the only way to be comfortable on stage is to have already removed the doubt in the practice room.\n\nUltimately this is where personal accountability stops being a value on a page and starts being the thing that makes the group sound good.",
     image: trumpet,
   },
   {
     title: "EHS Marching Band",
-    desc: "Climbed from the 3rd to 1st trumpet part, I helped the ensemble achieve National Champs. Enduring the grueling rehearsals while holding a leadership position taught the value of a role model should have resilience and grit when facing friction.",
+    desc: "Climbed from the third trumpet part to first and section leader, with the ensemble finishing as National Champions.\n\nI showed up as a shy freshman who did not know what to do or even what good trumpet playing was supposed to sound like, and the only reason that changed is that the rehearsals did not allow for it. Hours under the sun, laps for anyone who missed the standard, and a director who expected the section to march, play, and hold form at the same time. While I resented that at the time, it is the reason I know where my actual limit is.\n\nBy the end I was running sectionals almost every Tuesday across the four months of the season, and the role grew past my own section. People came to me when they needed something, whether that was musicality, a personal problem, or somewhere in the middle, and I ended up playing the older brother for a lot of them. That is where I learned that a leadership title is mostly irrelevant, since what people actually respond to is whether you are the person they come to when something goes wrong.",
     image: marchingEns,
     popupImage: marchingSolo,
     imageLink: "https://youtu.be/zn2gasWT_nU?si=9VZtbRpCVaShTp3A&t=86",
@@ -140,138 +137,60 @@ export const pastEnsembles = [
 
 export const currentCourse = [
   {
-    code: "IS 117",
-    title: "Intro to Website Development",
-    desc: "Designing the front-end of the web using HTML5 and CSS3. Emphasizes UI/UX principles, because a technical solution is only as good as its user experience.",
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg",
-    imageLink: "https://catalog.njit.edu/search/?P=IS%20117",
-  },
-  {
-    code: "ACCT 115",
-    title: "Fundamentals of Accounting",
-    desc: "Analyzing balance sheets and cash flows. Understanding the financial reality behind corporate structures is essential for managing profitable tech products.",
+    code: "ACCT 215",
+    title: "Managerial Accounting",
+    desc: "Building on the foundation laid in ACCT 115 and 117, this accounting class focuses on the managerial side of a business.\n\nThis course works through job costing, variance analysis, and budgetary control, which sound like three separate topics, yet essentially they are the same question asked three ways: what did this actually cost us? Why did it differ from what we planned? And what do we do about it next quarter? While this is an accounting course, it also digs into how management actually makes decisions, the reasoning behind the scenes, and what separates a good call from a bad one.\n\nFinancial accounting has to satisfy an outside standard, while managerial accounting only has to be useful to the person reading it. That being said, the piece that carries the furthest is cost behavior, since almost every call a manager makes, whether to price a product, cut a line, or take on one more client, comes down to knowing which costs move with volume and which ones don't. Get that wrong and every number built on top of it is wrong too, which is why this is the accounting I expect to actually use.",
     image: accounting,
-    imageLink: "https://catalog.njit.edu/search/?P=ACCT%20115",
-  },
-  {
-    code: "MGMT 190",
-    title: "Intro to Business",
-    desc: "Examining global market structures and operational frameworks. This provides the big-picture context needed to see where software solutions actually fit into the economy along with the backbone structure of a company.",
-    image: business,
-    imageLink: "https://catalog.njit.edu/search/?P=MGMT%20190",
-  },
-  {
-    code: "ENGL 102",
-    title: "Intro to Research Writing",
-    desc: "Refining the ability to research complex topics and synthesize them into clear arguments.",
-    image: english,
-    imageLink: "https://catalog.njit.edu/search/?P=ENGL%20102",
-  },
-  {
-    code: "MATH 111",
-    title: "Calculus 1",
-    desc: "Applying derivatives to model rates of change. Building the mathematical intuition needed for quantitative analysis and financial optimization.",
-    image: calc,
-    imageLink: "https://catalog.njit.edu/search/?P=MATH%20111",
-  },
-  {
-    code: "CS 113",
-    title: "Intro to Computer Science I",
-    desc: "Mastering the fundamentals of Object-Oriented Programming (OOP) in Java. Focused on building application logic measure by measure to create reusable, efficient code.",
-    image: java,
-    imageLink: "https://catalog.njit.edu/search/?P=CS%20113",
-  },
-  {
-    code: "CS 114",
-    title: "Intro to Computer Science II",
-    desc: "Diving into Java data structures like Trees and Stacks. The focus shifts from making software functional to optimizing it for speed and efficiency.",
-    image: cs114,
-    imageLink: "https://catalog.njit.edu/search/?P=CS%20114",
-  },
-  {
-    code: "ECON 265",
-    title: "Microeconomics",
-    desc: "Analyzing consumer behavior and pricing strategies. Understanding why people make economic choices is critical when developing and launching a product.",
-    image: micro,
-    imageLink: "https://catalog.njit.edu/search/?P=ECON%20265",
+    imageLink: "https://catalog.njit.edu/search/?P=ACCT+215",
   },
   {
     code: "ECON 266",
     title: "Macroeconomics",
-    desc: "----------.",
+    desc: "Macroeconomics works through GDP, inflation, unemployment, and the fiscal and monetary levers that governments and central banks pull to move them.\n\nThe point is not really the individual formulas, but rather learning to read the environment a business is operating inside of, since a company can execute perfectly and still get hit by a rate decision it had no part in. While microeconomics explains why a firm prices the way it does, macro explains why that same price stops working the moment borrowing gets expensive and consumers pull back.\n\nThis is the course that gives an actual mechanism to the headlines about rate cuts and jobs reports, which matters for anyone who will eventually have to defend a plan built on assumptions about next year.",
     image: micro,
     imageLink: "https://catalog.njit.edu/search/?P=ECON%20266",
   },
   {
     code: "ECON 265",
-    title: "Intro to information systems",
-    desc: "----------.",
+    title: "Microeconomics",
+    desc: "Microeconomics models supply, demand, elasticity, and how firms actually price under monopoly, oligopoly, and the market structures in between.\n\nThe mechanics are useful, yet the part that transfers is marginal thinking, the habit of asking what one more unit costs and what one more unit earns, rather than what the whole thing costs on average. That distinction decides real questions; whether a feature is worth building, whether a discount pays for itself, whether a customer is worth keeping.\n\nElasticity does the same work from the other direction, since knowing how much demand moves when a price moves is what keeps a pricing decision from being a guess.",
     image: micro,
-    imageLink: "--------",
+    imageLink: "https://catalog.njit.edu/search/?P=ECON%20265",
   },
   {
-    code: "ECON 265",
-    title: "Intro to information systems",
-    desc: "----------.",
-    image: micro,
-    imageLink: "--------",
-  },
-];
-
-export const nextCourses = [
-  {
-    code: "MIS 245",
-    title: "Mgmt. Information Systems",
-    desc: "Bridging the gap between code and company strategy. Analyzing how enterprise systems and databases actually drive business operations and value.",
-    image: mis,
-    imageLink: "https://catalog.njit.edu/search/?P=MIS%20245",
+    code: "MATH 111",
+    title: "Calculus 1",
+    desc: "Calculus 1 covers limits, derivatives, and the rules for applying them, all pointed at the same underlying question of how quantities change rather than what they measure at a single frozen moment.\n\nThe mechanics take up most of the semester, yet the idea underneath is simpler than the notation makes it look; a derivative is just a rate, the answer to how fast something is moving at the exact instant you ask. Optimization is where that turns practical, since finding where a curve peaks or bottoms out is the same question as finding the price, the quantity, or the allocation that does the most with what you have.\n\nAlmost every quantitative course I take sits downstream of this, whether that's marginal thinking in economics or the models in analytics, both of which are built on a rate of change wearing different clothes. Ultimately this is the prerequisite that keeps showing up long after the exam is over.",
+    image: calc,
+    imageLink: "https://catalog.njit.edu/search/?P=MATH%20111",
   },
   {
-    code: "MGMT 116",
-    title: "Quant. Analysis for Business",
-    desc: "Using statistical software and regression analysis. Shifting from intuition to data-driven decision-making to uncover the truth behind the numbers.",
+    code: "CS 114",
+    title: "Intro to Computer Science II",
+    desc: "Intro to Computer Science II, also known as 'data structures and algorithms', worked through in Java, is in my opinon one of the most crucial and most important courses during my time in college. covering trees, stacks, sorting and searching sequences that runs on top of them along with learning about how to minamize run times withought scrificing accuracy.\n\nThe shift from the first two courses are extremely noticible as the question is no longer whether the code works, but rather what it costs to run in time and memory as the input grows. Reaching for a tree instead of a list, or a map instead of a nested loop, is the difference between code that holds up at scale and code that falls apart the first time there's real data behind it.\n\nDespite this being in java, the reasoning and logic behind this outlives the language, since analyzing complexity is a way of thinking rather then applying to one particular langauge or framework",
+    image: cs114,
+    imageLink: "https://catalog.njit.edu/search/?P=CS%20114",
+  },
+  {
+    code: "MGMT 216",
+    title: "Business Data Analytics",
+    desc: "Business data analytics means running descriptive statistics, hypothesis tests, regression, and forecasting against real business data in Excel, which is where most of this work actually happens rather than in a statistics package nobody at the company has installed.\n\nAlthough intuition is fast and often right, it has no way of telling you whether the pattern it found is real or just noise, and that is the entire job of a hypothesis test. Regression takes it further by putting a number on the relationship, so 'sales went up after we changed the pricing' turns into an estimate of how much of that increase the pricing change is responsible for.\n\nForecasting pushes the same logic forward, though a model built on last year's conditions still depends on the assumption that this year resembles it.",
     image: stats,
-    imageLink: "https://catalog.njit.edu/search/?P=MGMT%20116",
-  },
-
-  {
-    code: "MGMT 290",
-    title: "Business Law I",
-    desc: "Studying the legal frameworks that protect products. From contracts to intellectual property, this covers the gritty work of operating a business safely.",
-    image: law,
-    imageLink: "https://catalog.njit.edu/search/?P=MGMT%20290",
+    imageLink: "https://catalog.njit.edu/search/?search=mgmt+216",
   },
   {
-    code: "LIT 230",
-    title: "Intro to Literature",
-    desc: "Deconstructing complex narratives. Analyzing different perspectives sharpens critical thinking and improves the ability to communicate ideas clearly.",
+    code: "IS 265",
+    title: "Intro to Information Systems",
+    desc: "Intro to Information Systems surveys how software, hardware, and people combine into the systems an organization actually runs on, from the infrastructure underneath to the competitive strategy sitting on top of it.\n\nThe framing that sticks is that an information system is never just the technology; it is the technology, the process built around it, and the people who have to use it every day, and a failure in any one of the three sinks the other two. This is what explains why technically excellent projects still get abandoned, and why a tool nobody opens is worth less than a mediocre one everyone actually uses.\n\nUltimately this is the core framing of the degree, connecting what gets built to why a business needed it, which is the exact gap a technical product manager spends a career standing in.",
+    image: mis,
+    imageLink: "https://catalog.njit.edu/search/?search=is+265",
+  },
+  {
+    code: "PSY 210",
+    title: "Intro Psychology",
+    desc: "Intro Psychology covers the fundamentals of learning, memory, perception, motivation, and the research methods used to study all of them.\n\nThe methods half matters as much as the content, since understanding sample size, control groups, and what a study can and cannot claim is what keeps you from taking a headline finding at face value.\n\nEvery product decision rests on an assumption about how people think and work, whether that's how much they retain from an onboarding flow, how they read a layout before they read a word of it, or what actually brings someone back to an app on day thirty. Rather than guessing at those assumptions, this is where they get named and tested.",
     image: book,
-    imageLink: "https://catalog.njit.edu/search/?P=LIT%20230",
-  },
-  {
-    code: "CS 113",
-    title: "Intro to Computer Science I",
-    desc: "Mastering the fundamentals of Object-Oriented Programming (OOP) in Java. Focused on building application logic measure by measure to create reusable, efficient code.",
-    image: java,
-    imageLink: "https://catalog.njit.edu/search/?P=CS%20113",
-  },
-];
-
-export const pastCourses = [
-  {
-    code: "CS 100",
-    title: "Roadmap to Computing",
-    desc: "The starting point for coding. Using Python to learn how to solve logic problems step-by-step through control structures and algorithmic thinking.",
-    image: python,
-    imageLink: "https://catalog.njit.edu/search/?P=CS%20100",
-  },
-  {
-    code: "ENGL 101",
-    title: "Introduction to Academic Writing",
-    desc: "The foundation of persuasion. Focused on rhetoric and composition to ensure that technical concepts can be explained and defended effectively.",
-    image: english,
-    imageLink: "https://catalog.njit.edu/search/?P=ENGL%20101",
+    imageLink: "https://catalog.njit.edu/search/?search=psy+210",
   },
 ];
 
