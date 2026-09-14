@@ -15,14 +15,28 @@ export default function Developer() {
 
       <div className="page-intro">
         <p>
-          Development is the one place where I can start with a completely blank
-          screen and build something real, line by line and measure by measure.
-          But I don't want to just write code in a vacuum. My goal is to step
-          into Product Management and Technical Architecture. I want to take all
-          the challenges and curveballs of a project and manage them into a
-          product that actually solves a user's problem. I know firsthand that
-          elite results require elite preparation, and that is exactly how I
-          approach every project I build.
+          My end goal is to become a technical program manager. While that is
+          years away, nearly everything here is me working backward from it and
+          asking what the path actually requires.
+        </p>
+        <p>
+          StudyNeant is where this all started. The assignment was a small
+          program with a few parameters, and while I could have written an
+          average calculator for two numbers and called it finished, I decided
+          to build a full-stack productivity suite for students instead; I have
+          been learning to program around that decision ever since. Everything
+          below follows the same logic. Client sites come first, then a real
+          database behind StudyNeant rather than local storage, then "Step One,"
+          a mobile app that reads a marcher's joints and coaches their
+          technique, and lastly my own LLM. Each milestone requires something I
+          can't do yet, which is exactly why I picked it, and each one leads
+          into the next.
+        </p>
+        <p>
+          That said, none of this is quick or simple. I step away for academics,
+          for internships, and for music, and all of which is planned for;
+          skipping the balance is what actually causes burnout, and the work is
+          still here when I come back.
         </p>
       </div>
 

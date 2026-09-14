@@ -11,19 +11,30 @@ export default function Student() {
       <h1>Student</h1>
       <div className="page-intro">
         <p>
-          I’ve always loved the process of creating, whether it was building
-          with Legos as a kid or writing software today. But over time, I
-          realized that just writing code wasn't enough for me. It’s a lot like
-          looking at a brand new piece of music—without direction, it’s just a
-          sea of scattered notes. That’s why I shifted my focus from pure
-          Computer Science to Product Management. I want to be the one putting
-          all the small pieces together, bridging the gap between raw code and
-          actual solutions that help people.
+          I have always loved the process of creating, whether that was building
+          with Legos as a kid or writing software now. Over time though, I
+          realized that writing code by itself was never going to be enough for
+          me. It was a lot like opening a brand new piece of music; without
+          someone deciding on the direction, it is just a sea of scattered
+          notes. That is why I moved toward Product Management rather than
+          staying in pure Computer Science. I want to be the one putting the
+          small pieces together and closing the gap between raw code and
+          something that actually solves a problem for a person.
         </p>
         <p>
-          Currently, I am a Freshman at NJIT pursuing my{" "}
-          <strong>B.S. in Management Information Systems</strong> with a minor
-          in <strong>Computer Science</strong>, graduating in 2029.
+          My coursework is what keeps that balance in front of me. A pure
+          Computer Science degree is theory, code, and math, while mine sits
+          between management, business, finance, AND the code itself. The same
+          thing showed up in my Info Sys. class, where I could have sat back and
+          let the group carry the work; instead I led and took initive it for
+          most of the semester.
+        </p>
+        <p>
+          Currently, I am a Sophomore at NJIT pursuing my
+          <strong> B.S. in Management Information Systems</strong> with a{" "}
+          <strong>minor in Computer Science</strong> and a possible{" "}
+          <strong>second minor in Psychology</strong>, graduating in May 2029.
+          The classes below are the ones that have mattered most so far.
         </p>
       </div>
 
