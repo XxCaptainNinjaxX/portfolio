@@ -25,7 +25,14 @@ import cs114 from "../../assets/icons/png/004-algorithms.png";
 import orion_img from "../../assets/images/orion_logo.jpg";
 import zach from "../../assets/images/zach.png";
 
-const placeholderImage = "/android-chrome-192x192.png";
+// Files in public/ aren't rewritten by Vite, so they need the deploy base
+// prepended by hand. BASE_URL is "/" at the domain root and "/projects/test/"
+// for the QA build.
+export const brandLogo = `${import.meta.env.BASE_URL}android-chrome-192x192.png`;
+export const resumeFile = `${import.meta.env.BASE_URL}Roberto Rodriguez's Resume.pdf`;
+export const siteHome = import.meta.env.BASE_URL;
+
+const placeholderImage = brandLogo; // same asset, different role
 
 export interface ContentEntry {
   title: string;
@@ -58,8 +65,8 @@ export const dev = {
   portfolio: {
     title: "Personal Portfolio",
     desc: "A fully responsive developer portfolio built with React along with assembling modern React components.",
-    image: "/android-chrome-192x192.png",
-    imageLink: "/",
+    image: brandLogo,
+    imageLink: siteHome,
   },
   prezPerm: {
     title: "Prez & Perm",

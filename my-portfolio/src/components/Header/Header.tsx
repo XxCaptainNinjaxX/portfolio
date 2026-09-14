@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { FaLinkedinIn } from "react-icons/fa";
+import { brandLogo, resumeFile } from "../Data/data";
 import "./Header.css";
 
 interface HeaderProps {
@@ -14,7 +15,7 @@ export default function Header({ isSplashOn, toggleSplash }: HeaderProps) {
         <div className="brand">
           <NavLink to="/" className="brand-link">
             <img
-              src="/android-chrome-192x192.png"
+              src={brandLogo}
               alt="Robert Rodriguez Logo"
               className="brand-logo"
             />
@@ -64,7 +65,7 @@ export default function Header({ isSplashOn, toggleSplash }: HeaderProps) {
             <FaLinkedinIn />
           </a>
           <a
-            href="../../../Roberto Rodriguez's Resume.pdf"
+            href={resumeFile}
             download="Roberto Rodriguez's Resume.pdf"
             className="resume-btn"
             target="_blank"

@@ -1,9 +1,7 @@
-import { skills } from "../Data/data.ts";
+import { brandLogo, skills } from "../Data/data.ts";
 
 import backgroundImage from "../../assets/images/bg2.jpg";
 import mainImage from "../../assets/images/main1.jpg";
-
-const brandLogo = "/android-chrome-192x192.png";
 
 /**
  * The images the page must have painted before the preloader lifts.
