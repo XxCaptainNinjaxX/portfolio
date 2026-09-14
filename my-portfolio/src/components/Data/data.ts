@@ -53,6 +53,7 @@ export const dev = {
     title: "Musician's Friend Portfolio",
     desc: "Tech stack [Next.js, TypeScript, Tailwind CSS, Sanity, Vercel] \n A performance portfolio for a musician includes recordings, bio, booking inquiries, statically exported for near-zero hosting cost. \n \nBuilt on a headless CMS (Content Management System) so he posts a new gig or track himself instead of texting me to redeploy. The issued I ran into planning this interestingly wasn't the design, rather it was who maintains the site after handoff.",
     image: zach,
+    imageLink: "https://robriguez.com/projects/zach/",
   },
   portfolio: {
     title: "Personal Portfolio",
