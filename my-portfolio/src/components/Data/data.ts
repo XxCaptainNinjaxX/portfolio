@@ -10,11 +10,17 @@ import marchingEns from "../../assets/images/marchingEns.png";
 import marchingSolo from "../../assets/images/MarchingSS.png";
 
 import java from "../../assets/icons/png/java.png";
-import css from "../../assets/icons/png/css.png";
-import js from "../../assets/icons/png/js.png";
+// import css from "../../assets/icons/png/css.png";
+// import js from "../../assets/icons/png/js.png";
 import figma from "../../assets/icons/png/figma.png";
 import git from "../../assets/icons/png/github.png";
 import ts from "../../assets/icons/png/typescript.png";
+import py from "../../assets/icons/png/007-python.png";
+import claude from "../../assets/icons/png/claude.svg";
+import docker from "../../assets/icons/png/docker.png";
+import nextJS from "../../assets/icons/png/nextJS.png";
+import fast from "../../assets/icons/png/fastapi.svg";
+
 import accounting from "../../assets/icons/png/balanceSheet.png";
 import calc from "../../assets/icons/png/calc.png";
 import book from "../../assets/icons/png/001-book.png";
@@ -361,29 +367,12 @@ export const musicianHome: ContentEntry[] = [
 ];
 
 //--------------- Home Page: Skills -----------
-
 export const skills = [
+  { title: "Python", image: py, imageLink: "https://www.python.org/" },
   {
-    title: "HTML",
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg",
-    imageLink: "https://developer.mozilla.org/en-US/docs/Web/HTML",
-  },
-  {
-    title: "CSS",
-    image: css,
-    imageLink: "https://developer.mozilla.org/en-US/docs/Web/CSS",
-  },
-  {
-    title: "Tailwind",
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-    imageLink: "https://tailwindcss.com/",
-  },
-  {
-    title: "JavaScript",
-    image: js,
-    imageLink: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+    title: "Claude API",
+    image: claude,
+    imageLink: "https://platform.claude.com/docs/en/api/overview",
   },
   {
     title: "TypeScript",
@@ -397,9 +386,25 @@ export const skills = [
     imageLink: "https://react.dev/",
   },
   {
-    title: "Java",
-    image: java,
-    imageLink: "https://www.oracle.com/java/",
+    title: "NextJS",
+    image: nextJS,
+    imageLink: "https://nextjs.org/",
+  },
+  {
+    title: "Tailwind",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+    imageLink: "https://tailwindcss.com/",
+  },
+  {
+    title: "FastAPI",
+    image: fast,
+    imageLink: "https://fastapi.tiangolo.com/",
+  },
+  {
+    title: "Docker",
+    image: docker,
+    imageLink: "https://www.docker.com/",
   },
   {
     title: "Figma",
@@ -409,6 +414,11 @@ export const skills = [
   {
     title: "Git",
     image: git,
-    imageLink: "https://github.com/",
+    imageLink: "https://git-scm.com/",
+  },
+  {
+    title: "Java",
+    image: java,
+    imageLink: "https://www.oracle.com/java/",
   },
 ];
