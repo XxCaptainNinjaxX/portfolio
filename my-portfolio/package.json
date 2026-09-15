@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "build:qa": "tsc -b && vite build --base=/projects/QA/",
+    "build:qa": "tsc -b && vite build --base=/projects/QA/portfolio",
     "lint": "eslint .",
     "preview": "vite preview"
   },
