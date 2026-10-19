@@ -23,7 +23,7 @@ export default function Header({ isSplashOn, toggleSplash }: HeaderProps) {
 
           <div className="brand-text">
             <h1>Robert Rodriguez</h1>
-            <p>Student & Developer</p>
+            <p>Developer & Professional Musician</p>
           </div>
         </div>
 

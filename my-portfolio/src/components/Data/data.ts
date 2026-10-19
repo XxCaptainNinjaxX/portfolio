@@ -60,13 +60,13 @@ export const dev = {
     title: "StudyNeant App",
     desc: "Tech Stack [Next.JS, TypeScript, React, Tailwind CSS, Supabase (Postgres) React Native for mobile, PWA for desktop]\n A comprehensive productivity suite for students. Building this involves integrating a custom GPA calculator, calendar, dynamic note-taking system, and more, to solve real academic workflow problems.",
     image: studyNeantImg,
-    imageLink: "https://robriguez.com/projects/Studyneant/",
+    imageLink: "https://robriguez.com/projects/Studyneant/calendar/",
   },
   musiciansFriend: {
     title: "Musician's Friend Portfolio",
     desc: "Tech stack [Next.js, TypeScript, Tailwind CSS, Sanity, Cloudflare pages] \n A performance portfolio for a musician includes recordings, bio, booking inquiries, statically exported for near-zero hosting cost. \n \nBuilt on a headless CMS (Content Management System) so he posts a new gig or track himself instead of texting me to redeploy. The issued I ran into planning this interestingly wasn't the design, rather it was who maintains the site after handoff.",
     image: zach,
-    imageLink: "https://robriguez.com/projects/zach/",
+    imageLink: "https://crawfordcompositions.com/",
   },
   portfolio: {
     title: "Personal Portfolio",
